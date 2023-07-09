@@ -1,0 +1,168 @@
+@import './mixin';
+
+// btn
+.btn-commn{
+    @include button ();
+}
+.btn-commn-bg-primary{
+    @include button ($textColor: $text-white, $backgroundColor: $bg-primary, $hbackgrpundColor:$bg-primary, $opacity:0.9);
+}
+// .btn-amn-commn{
+//     @include button_amn();
+// }
+
+.site-btn-effect-commn{
+    @include site-btn-effect();
+}
+.site-btn-effect-commn-bg-primary{
+    @include site-btn-effect-bg-primary();
+}
+// seprator
+.sep-leaf-right-commn{
+    @include sep_leaf_right();
+}
+// headings
+// heading2
+.heading2-commn{
+    @include heading2();
+}
+.heading2-commn-text-white{
+    @include heading2($color:$text-white);
+}
+// pills
+.pills_primary{
+    @include pills_commn();
+}
+// padding
+.p-10{
+    padding: 0.714rem;
+}
+.p-tp80{
+    padding-top:5.714rem;
+}
+.p-btm80{
+    padding-bottom:5.714rem;
+}
+// z-index
+.z-1{
+    z-index: 1;
+}
+
+// font-weight
+.f-w100{
+    font-weight: 100;
+}
+.f-w200{
+    font-weight: 200;
+}
+.f-w300{
+    font-weight: 300;
+}
+.f-w400{
+    font-weight: 400;
+}
+.f-w500{
+    font-weight: 500;
+}
+.f-w600{
+    font-weight: 600;
+}
+.f-w700{
+    font-weight: 700;
+}
+.f-w800{
+    font-weight: 800;
+}
+.f-w900{
+    font-weight: 900;
+}
+// Headline Font Size
+h1,h2,h3,h4,h5,h6{
+    font-family: $secondary-font;
+}
+h1{
+    font-size:4rem;
+}
+h2{
+  font-size:3.714rem;
+}
+
+h3{
+    font-size:2.5rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+h5{
+    font-size: 1.5rem ;
+}
+h6{
+    font-size: 1rem;
+}
+// border radius
+.br_3{
+    border-radius: 0.214rem;
+}
+.br_4{
+    border-radius: 0.286rem;
+}
+.br_5{
+    border-radius: 0.357rem;
+}
+.br_6{
+    border-radius: 0.426rem !important;
+}
+.br_7{
+    border-radius: 0.5rem;
+}
+.br_8{
+    border-radius: 0.571rem;
+}
+.br_9{
+    border-radius: 0.643rem;
+}
+.br_10{
+    border-radius: 0.714rem;
+}
+// profile 300
+.pr_300{
+    @include profile_300();
+}
+// height
+.height_70{
+    @include height_70();
+}
+// end 
+
+// modal sizes
+.modal-md{
+    min-width: 724px;
+    max-width: 724px;
+    @media (max-width:$breakpoint-768){
+        min-width: calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+        margin: auto;
+    }
+}
+
+// list-style
+.list_inside{
+    list-style:inside;
+}
+
+// scroll
+.custm_scroll::-webkit-scrollbar {
+    width: 0.3em;
+} 
+.custm_scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.custm_scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(212, 212, 212);
+  outline: 0px;
+}
+// cursor
+.cursor_pointer{
+    cursor: pointer;
+}

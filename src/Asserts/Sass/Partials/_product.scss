@@ -1,0 +1,212 @@
+.accordion_wrapper{
+    .accordion_item_outer{
+        padding:0.37rem 1rem;
+        .accordion-button{
+            padding:0rem;
+            &:focus{
+                border: none;
+                box-shadow: none;
+            }
+            &:not(.collapsed){
+                background-color:#fff;
+                box-shadow: none;
+            }
+        }
+        .accordion-body {
+            padding: 0.5rem 1.25rem;
+        }
+        .accordion-button,.accordion-item {
+            font-size:1.375rem;
+            color: $text-primary;
+            font-weight: 500;
+            font-family: $secondary-font;
+        }
+        .accordian_sub_menu li {
+            margin-bottom: 0.3rem;
+            line-height: 1.375rem;
+            .inner_item {
+                font-size:0.8rem;
+                color: $text-secondary;
+                font-weight: 400;
+                letter-spacing: 0.04rem;
+                font-family: $primary-font;
+                cursor: pointer;
+                &:hover,:focus,:visited,:active{
+                    color: $text-primary;
+                    padding-left: 0.5rem;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+     
+
+    
+    }
+       
+}
+
+.product_card{
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    border: none;
+}
+
+
+
+// ====================================
+/* 03 Why Choose US */
+// .why_choose_wrapper {
+//     padding: 20rem 0 10rem;
+//     overflow-x: hidden;
+// }
+
+// .why_choose_wrapper .who_we_are {
+//     display: flex;
+//     align-items: center;
+//     position: absolute;
+//     top: 10rem;
+//     left: -5rem;
+//     transform: rotate(-90deg);
+// }
+
+// .why_choose_wrapper .who_we_are .number {
+//     padding: 1rem 1.2rem;
+//     border: 0.1rem solid var(--gray-color);
+//     border-radius: 0.2rem;
+//     margin-right: 1.2rem;
+//     font-weight: 800;
+//     font-size: 1.2rem;
+//     color: var(--gray-color);
+// }
+
+// .why_choose_wrapper .who_we_are .number_text {
+//     font-size: 1.2rem;
+//     font-weight: 800;
+//     text-transform: uppercase;
+//     position: relative;
+//     color: var(--gray-color);
+// }
+
+// .why_choose_wrapper .who_we_are .number_text::after {
+//     position: absolute;
+//     top: 0.8rem;
+//     right: -8rem;
+//     content: '';
+//     width: 80%;
+//     height: 0.1rem;
+//     background-color: var(--gray-color);
+// }
+
+// .why_choose_wrapper .left_div {
+//     flex: 0 0 auto;
+//     width: 65%;
+//     padding-left: 8rem;
+//     padding-right: 1.5rem;
+// }
+
+// .why_choose_wrapper .right_div {
+//     flex: 0 0 auto;
+//     width: 35%;
+//     padding-left: 1.5rem;
+//     padding-right: 1.5rem;
+// }
+
+// .why_choose_wrapper h2 {
+//     font-size: 4rem;
+//     font-weight: 600;
+// }
+
+// .why_choose_wrapper h2 span {
+//     color: var(--third-color);
+// }
+
+// .why_choose_wrapper ul {
+//     padding: 0px;
+//     list-style: none;
+//     display: flex;
+//     align-items: center;
+//     padding-top: 5rem;
+// }
+
+// .why_choose_wrapper ul li {
+//     position: relative;
+//     display: inline-block;
+//     width: 19rem;
+//     height: 15rem;
+
+//     margin-right: 2rem;
+// }
+
+// .why_choose_wrapper ul li a {
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: start;
+//     justify-content: center;
+//     text-decoration: none;
+//     color: var(--black-color);
+//     word-wrap: break-word;
+//     background-color: var(--fifth-color);
+//     border: 1px solid var(--fifth-color);
+//     padding: 3rem 4rem;
+//     transition: all 0.3s ease-in-out;
+//     -webkit-transition: all 0.3s ease-in-out;
+//     -moz-transition: all 0.3s ease-in-out;
+//     -ms-transition: all 0.3s ease-in-out;
+//     -o-transition: all 0.3s ease-in-out;
+// }
+
+// .why_choose_wrapper ul li a:hover,
+// .why_choose_wrapper ul li a:focus,
+// .why_choose_wrapper .activelink {
+//     color: var(--white-color);
+//     background-color: var(--primary-color);
+//     border-color: var(--primary-color);
+//     transform: translateY(-10%);
+//     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+// }
+// .why_choose_wrapper ul li a .active{
+//     display:none;
+// }
+// .why_choose_wrapper ul li a.activelink .inactive{
+//     display:none;
+// }
+// .why_choose_wrapper ul li a.activelink .active{
+//     display:inline-block;
+// }
+
+// .why_choose_wrapper ul li a h3 {
+//     font-size: 1.8rem;
+//     font-weight: 700;
+//     line-height: 2.5rem;
+//     margin-top: 1.5rem;
+// }
+
+// .why_choose_wrapper .list {
+//     padding: 3rem;
+//     background-color: var(--primary-color);
+//     border-radius: 0.5rem;
+// }
+
+// .why_choose_wrapper .list h3 {
+//     font-size: 2.2rem;
+//     font-weight: 700;
+//     color: var(--white-color);
+//     margin-top: 0.5rem;
+//     margin-bottom: 3rem;
+// }
+
+// .why_choose_wrapper .list p {
+//     color: var(--white-color);
+//     font-size: 1.6rem;
+//     font-weight: 400;
+// }
+
+.product_wrapper .active {
+    display: flex;
+}
+
+.product_wrapper .hide {
+    display: none;
+}

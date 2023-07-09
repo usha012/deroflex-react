@@ -1,0 +1,132 @@
+@import './variable';
+@mixin button ($textColor: $text-white, $backgroundColor: $bg-primary, $hbackgrpundColor:$bg-secondary, $opacity:0.9) {
+    display: inline-block;
+    width: fit-content;
+    // padding:0.75rem 1rem;
+    padding: 0.9rem 2.857rem;
+    border-radius: 0rem;
+    background-color:$backgroundColor;
+    color:$textColor;
+    cursor: pointer;
+    transition:all 400ms ease; 
+    font-family: $primary-font;
+    font-size: 1rem;
+    overflow: hidden;
+
+    &:hover,
+    &:focus{
+        // background-color:lighten($backgroundColor, 4%);
+        background-color: rgba($hbackgrpundColor, $opacity);
+        color:$textColor;  
+        outline:none;
+        box-shadow:none;
+       
+    }
+    @media (max-width:1200px) {
+        padding: 0.9rem 1.857rem;
+    }
+}
+// @mixin button_amn ($textColor: $text-white, $backgroundColor: $bg-primary, $hbackgrpundColor:$bg-secondary, $opacity:0.9) {
+//     display: inline-block;
+//     width: fit-content;
+//     // padding:0.75rem 1rem;
+//     padding: 0.9rem 2.857rem;
+//     border-radius: 0rem;
+//     border:0px;
+//     background-color:$backgroundColor;
+//     color:$textColor;
+//     cursor: pointer;
+//     // transition:all 400ms ease; 
+//     // transition: all .3s ease !important;
+//     // transition: all 0.2s linear;
+//     transition: all 0.3s ease-out;
+//     box-shadow: inset 0 0 $backgroundColor;
+//     font-family: $primary-font;
+//     font-size: 1rem;
+//     text-shadow: 0 0 0 #fff, 400px 0 0 #fff;
+//     overflow: hidden;
+
+//     // &:hover,
+//     // &:focus{
+//     //     // background-color:lighten($backgroundColor, 4%);
+//     //     // background-color: rgba($hbackgrpundColor, $opacity);
+//     //     // background-color: #ededed;
+//     //     color: rgba(0, 0, 0, 1);
+//     //     // color:$textColor;  
+//     //     outline:none;
+//     //     box-shadow:none;
+//     //     box-shadow: inset 12em 0 #ededed;
+//     //     text-shadow: -400px 0 0 #111111, 0 0 0 #111111;
+       
+//     // }
+// }
+@mixin site-btn-effect{
+    text-shadow: 0 0 0 #fff, 400px 0 0 #fff;
+    color: rgba(0, 0, 0, 0) !important;
+    &:hover{
+        text-shadow: -400px 0 0 #111111, 0 0 0 #111111;
+        background-color: #ededed;
+        color: rgba(0, 0, 0, 0) !important;
+    }
+}
+
+@mixin site-btn-effect-bg-primary{
+    text-shadow: 0 0 0 #fff, 400px 0 0 #fff;
+    color: rgba(0, 0, 0, 0) !important;
+    &:hover{
+        text-shadow: -400px 0 0 #fff, 0 0 0 #fff;
+        background-color:$bg-primary;
+        color: rgba(0, 0, 0, 0) !important;
+    }
+}
+
+
+
+// seprator   
+@mixin sep_leaf_right{
+    position: relative;
+    margin-left: 50px;
+    &::before{
+        position: absolute;
+        content: '';
+        background-color: #ff5e15;
+        width: 40px;
+        height: 3px;
+        bottom: 0px;  
+        right: 0px;
+    }
+}
+
+@mixin heading2($color:$text-secondary, $lineHeight:1.1){
+    color:$color;
+    line-height: $lineHeight;
+
+}
+
+// profile size
+@mixin profile_300(){
+    width: 300px;
+    aspect-ratio: 4/3;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+// end profile size
+
+// height
+@mixin height_70($height:70vh, $mn_height:70vh){
+    height: $height;
+    min-height: $mn_height;
+}
+// end height
+
+// pills
+@mixin pills_commn($size:0.5rem,$bg-color:rgb(187, 186, 186),$font-size:0.8rem){
+   padding:$size;
+   background-color: $bg-color;
+   font-size: $font-size; 
+   font-weight: 400;
+}
+// end pills
