@@ -41,6 +41,16 @@ import FabricBellow from "../Assets/Images/upgrade_products/Product_Header_Image
 
     
 import PneumaticAirBellow from "../Assets/Images/upgrade_products/Product_Header_Images/Flexible_Pipe_System/pneumatic_air_bellow.png"
+    import AirBellow_1 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Bellow/p1.jpg"
+    import AirBellow_2 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Bellow/p2.jpg"
+
+    import AirSpring_1 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Spring/p1.jpg"
+    import AirSpring_2 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Spring/p2.jpg"
+    import AirSpring_3 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Air_Spring/p3.jpg" 
+
+    import RailwayAirBellow_1 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Railway_Air_Suspension_Bellow/p1.jpg"
+    import RailwayAirBellow_2 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Pneumatic_Air_Bellow/Railway_Air_Suspension_Bellow/p2.jpg"
+    
 import PTFRExpansionJoint from "../Assets/Images/upgrade_products/Product_Header_Images/Flexible_Pipe_System/PTFE_expansion_joints.png"
 import ProtectiveBellow from "../Assets/Images/upgrade_products/Product_Header_Images/Flexible_Pipe_System/protective_bellow.png"
 import BusDuctBellow from "../Assets/Images/upgrade_products/Product_Header_Images/Flexible_Pipe_System/bus_duct_bellow.png"
@@ -99,7 +109,7 @@ const NewProduct = () => {
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     redirect: true,
                     redirectLink: "https://www.google.com",
-                    images: [ ReducerExpansionJoint_1, ReducerExpansionJoint_1]
+                    images: [ ReducerExpansionJoint_1]
                 },
                 {
                     id: "05", 
@@ -107,7 +117,7 @@ const NewProduct = () => {
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     redirect: true,
                     redirectLink: "https://www.google.com",
-                    images: [ UnionExpansionJoint_1, UnionExpansionJoint_1 ]
+                    images: [ UnionExpansionJoint_1 ]
                 }
             ]
         },
@@ -174,35 +184,24 @@ const NewProduct = () => {
             products: [
                 {
                     id: "01",
-                    title: "Expansion Joint Welded Ending", 
+                    title: "Air bellow", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    redirect: false,
-                    redirectLink: "https://www.google.com",
-                    images: [ ExpansionJointWelding_1, ExpansionJointWelding_2]
+                    modal: true,
+                    images: [ AirBellow_1, AirBellow_2]
                 },
                 {
                     id: "02",
-                    title: "Small Metal Bellow", 
+                    title: "Air spring", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    redirect: false,
-                    redirectLink: "https://www.google.com",
-                    images: [ SmallMetalBellow_1, SmallMetalBellow_1]
+                    modal: true,
+                    images: [ AirSpring_1, AirSpring_2, AirSpring_3]
                 },
                 {
                     id: "03",
-                    title: "Stainless Steel Expansion Joint", 
+                    title: "Railways Suspension Bellow", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    redirect: false,
-                    redirectLink: "https://www.google.com",
-                    images: [ StainlessSteelExpansion_1, StainlessSteelExpansion_2]
-                },
-                {
-                    id: "04",
-                    title: "Rectangular Metallic Expansion Joint", 
-                    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    redirect: false,
-                    redirectLink: "https://www.google.com",
-                    images: [ RectangularMetallicExpansion_1, RectangularMetallicExpansion_2]
+                    modal: true,
+                    images: [ RailwayAirBellow_1, RailwayAirBellow_2]
                 }
             ]
         },
@@ -1255,7 +1254,7 @@ const NewProduct = () => {
 
         <Modal
             isOpen={modal?.show}
-            onRequestClose={() => setModal({})}
+            // onRequestClose={() => setModal({})}
             style={customStyles}
             contentLabel="Prodyct Modal"
         >
