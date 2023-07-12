@@ -12,7 +12,10 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/new-products/flexible-pipe-system" element={<FlexiblePipeSystem />} />
-					<Route path="/new" element={<ProductCard />} />
+					<Route path="/new-products/vibration-isolation" element={<FlexiblePipeSystem />} />
+					<Route path="/new-products/mechanical-seal" element={<FlexiblePipeSystem />} />
+					<Route path="/new-products/flexible-hose" element={<FlexiblePipeSystem />} />
+					<Route path="/new-products/customized" element={<FlexiblePipeSystem />} />
 				</Routes>
 			</Router>
 		</div>
