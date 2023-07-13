@@ -1,0 +1,126 @@
+[
+    {
+        "description": "DN 50(2\")",
+        "size": "medium"
+    },
+    {
+        "description": "DN 65(21/2)",
+        "size": "medium"
+    },
+    {
+        "description": "DN 80(3\")",
+        "size": "medium"
+    },
+    {
+        "description": "DN100(4\")",
+        "size": "medium"
+    },
+    {
+        "description": "DN150(6\")",
+        "size": "medium"
+    },
+    {
+        "description": "DN200(8\")",
+        "size": "medium"
+    },
+    {
+        "description": "DN250(10\")",
+        "size": "medium"
+    },
+    {
+        "description": "DN300(12\")",
+        "size": "medium"
+    },
+    {
+        "description": "DN350(14\")",
+        "size": "large"
+    },
+    {
+        "description": "DN400(16\")",
+        "size": "large"
+    },
+    {
+        "description": "DN450(18\")",
+        "size": "large"
+    },
+    {
+        "description": "DN450(18\")",
+        "size": "large"
+    },
+    {
+        "description": "DN500(20\")",
+        "size": "large"
+    },
+    {
+        "description": "DN600(24\")",
+        "size": "large"
+    },
+    {
+        "description": "DN450(18\")",
+        "size": "large"
+    },
+    {
+        "description": "DN125(5\")",
+        "size": "large"
+    },
+    {
+        "description": "DN650(26\")",
+        "size": "large"
+    },
+    {
+        "description": "DN700(28\")",
+        "size": "large"
+    },
+    {
+        "description": "DN800(32\")",
+        "size": "large"
+    },
+    {
+        "description": "DN900(36\")",
+        "size": "large"
+    },
+    {
+        "description": "DN1000(40\")",
+        "size": "large"
+    },
+    {
+        "description": "DN1100(44\")",
+        "size": "large"
+    },
+    {
+        "description": "DN1200(48\")",
+        "size": "large"
+    },
+    {
+        "description": "DN1300(52\")",
+        "size": "large"
+    },
+    {
+        "description": "DN1400(56\")",
+        "size": "large"
+    },
+    {
+        "description": "DN1600(64\")",
+        "size": "large"
+    },
+    {
+        "description": "DN1800(72\")",
+        "size": "large"
+    },
+    {
+        "description": "DN2000(80\")",
+        "size": "large"
+    },
+    {
+        "description": "DN2200(88\")",
+        "size": "large"
+    },
+    {
+        "description": "DN2400(96\")",
+        "size": "large"
+    },
+    {
+        "description": "DN2500(100\")",
+        "size": "large"
+    }
+]

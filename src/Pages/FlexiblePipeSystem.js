@@ -84,6 +84,8 @@ import BusDuctBellow from "../Assets/Images/upgrade_products/Product_Header_Imag
     import BusDuctBellow_5 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Bus_Duct_Bellow/Railway_Rectangular_Bellow/p2.png"
 
 import ProductCard from '../Components/productCard';
+import { FlexiblePipePaths } from '../constant';
+import { customStyles } from '../helper';
 
 const FlexiblePipeSystem = () => {
 
@@ -91,21 +93,6 @@ const FlexiblePipeSystem = () => {
     const navigate = useNavigate()
     const location = useLocation();
     const productId = searchParams.get('id') ? searchParams.get('id') : ""
-
-    const customStyles = {
-        content: {
-          top: '50%',
-          left: '50%',
-          right: 'auto',
-          bottom: 'auto',
-          marginRight: '-50%',
-          transform: 'translate(-50%, -50%)',
-        },
-        overlay: {
-            zIndex: 1000,
-            background: "rgba(0, 0, 0, 0.5)"
-        }
-    }
 
     const data = [
         {
@@ -118,7 +105,7 @@ const FlexiblePipeSystem = () => {
                     title: "Single Arch Expansion Joint", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     redirect: true,
-                    redirectLink: "https://www.google.com",
+                    redirectLink: window.location.pathname + "/" + FlexiblePipePaths.SingleArchExpansionJoint  ,
                     images: [ SingleArchExpansionJoint_1, SingleArchExpansionJoint_2, SingleArchExpansionJoint_3 ]
                 },
                 {
@@ -126,7 +113,7 @@ const FlexiblePipeSystem = () => {
                     title: "Double Arch Expansion Joint", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     redirect: true,
-                    redirectLink: "https://www.google.com",
+                    redirectLink: window.location.pathname + "/" + FlexiblePipePaths.DoubleArchExpansionJoint  ,
                     images: [ DoubleArchExpansionJoint_1, DoubleArchExpansionJoint_2, DoubleArchExpansionJoint_3 ]
                 },
                 {
@@ -134,7 +121,7 @@ const FlexiblePipeSystem = () => {
                     title: "Elbow Expansion Joint", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     redirect: true,
-                    redirectLink: "https://www.google.com",
+                    redirectLink:  window.location.pathname + "/" + FlexiblePipePaths.ElbowExpansionJoint  ,
                     images: [ ElbowExpansionJoint_1, ElbowExpansionJoint_2 ]
                 },
                 {
@@ -142,7 +129,7 @@ const FlexiblePipeSystem = () => {
                     title: "Reducer Expansion Joint", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     redirect: true,
-                    redirectLink: "https://www.google.com",
+                    redirectLink:  window.location.pathname + "/" + FlexiblePipePaths.ReducerExpansionJoint  ,
                     images: [ ReducerExpansionJoint_1]
                 },
                 {
@@ -150,7 +137,7 @@ const FlexiblePipeSystem = () => {
                     title: "Union Rubber Bellow", 
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     redirect: true,
-                    redirectLink: "https://www.google.com",
+                    redirectLink:  window.location.pathname + "/" + FlexiblePipePaths.UnionRubberBellow  ,
                     images: [ UnionExpansionJoint_1 ]
                 }
             ]
@@ -406,7 +393,7 @@ const FlexiblePipeSystem = () => {
             isOpen={modal?.show}
             // onRequestClose={() => setModal({})}
             style={customStyles}
-            contentLabel="Prodyct Modal"
+            contentLabel="Product Modal"
         >
                 <div className="modal-body pb-6 pt-6 text-left position-relative">
                     <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: 0}} data-bs-dismiss="modal" aria-label="Close"></button>

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import ProductCard from "./Components/productCard";
 import FlexiblePipeSystem from "./Pages/FlexiblePipeSystem";
+import FlexiblePipeSystemDetail from "./Pages/FlexiblePipeSystemDetail";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/new-products/flexible-pipe-system" element={<FlexiblePipeSystem />} />
+					<Route path="/new-products/flexible-pipe-system/:product" element={<FlexiblePipeSystemDetail />} />
 					<Route path="/new-products/vibration-isolation" element={<FlexiblePipeSystem />} />
 					<Route path="/new-products/mechanical-seal" element={<FlexiblePipeSystem />} />
 					<Route path="/new-products/flexible-hose" element={<FlexiblePipeSystem />} />

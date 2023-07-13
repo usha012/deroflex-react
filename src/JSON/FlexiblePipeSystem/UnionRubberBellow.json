@@ -1,0 +1,38 @@
+[
+    {
+        "description": "DN 15(1/2\")",
+        "length":"200 MM"
+    },
+    {
+        "description": "DN 20(3/4)",
+        "length":"150 MM"
+    },
+    {
+        "description": "DN25(1\")",
+        "length":"150 MM"
+    },
+    {
+        "description": "DN32(11/4\")",
+        "length":"150 MM"
+    },
+    {
+        "description": "DN40(11/2\")",
+        "length":"200 MM"
+    },
+    {
+        "description": "DN50(2\")",
+        "length":"200 MM"
+    },
+    {
+        "description": "DN65(21/2\")",
+        "length":"150 MM"
+    },
+    {
+        "description": "DN80(3\")",
+        "length":"150 MM"
+    },
+    {
+        "description": "DN100(4\")",
+        "length":"150 MM"
+    }
+]

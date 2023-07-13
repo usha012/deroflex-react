@@ -1,0 +1,22 @@
+[
+    {
+        "description": "DN 50(2\")",
+        "length":"(75+75)150 MM"
+    },
+    {
+        "description": "DN 65(21/2)",
+        "length":"(75+75)150 MM"
+    },
+    {
+        "description": "DN100(3\")",
+        "length":"(75+75)150 MM"
+    },
+    {
+        "description": "DN150(4\")",
+        "length":"(100+100)200 MM"
+    },
+    {
+        "description": "DN200(6\")",
+        "length":"(100+100)200 MM" 
+    }
+]

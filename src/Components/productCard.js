@@ -5,6 +5,7 @@ import RubberBellowP1_3 from "../Assets/Images/upgrade_products/Flexible_pipe_Sy
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({card, setModal}) => {
 
@@ -37,7 +38,7 @@ const ProductCard = ({card, setModal}) => {
                 {
                     card?.redirect
                     ?
-                    <a href={card?.redirectLink} target="_blank" class="btn btn-commn-bg-primary w-100">View More</a>
+                    <Link to={card?.redirectLink} class="btn btn-commn-bg-primary w-100">View More</Link>
                     :
                     ""
                 }
