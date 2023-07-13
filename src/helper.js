@@ -25,3 +25,12 @@ export const productRouteCapitalizeEachLetter = str => {
 
     return newStr
 }
+
+export const productOwlCarouselSetting = {
+    loop:true,
+    margin:10,
+    autoplay:true,
+    nav:true,
+    dots:false,
+    responsive:{ 0:{ items:1 }, 600:{ items:3 }, 1000:{ items:5 } }
+}

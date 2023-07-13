@@ -36,6 +36,13 @@ const ProductCard = ({card, setModal}) => {
                 <h5 class="card-title">{card?.title}</h5>
                 <p class="card-text fs_12">{card?.description}</p>
                 {
+                    card?.buy
+                    ?
+                    <span class=""><span class=" buy_btn btn btn-commn-bg-primary w-100 mb-3">Buy Now</span></span>
+                    :
+                    ""
+                }
+                {
                     card?.redirect
                     ?
                     <Link to={card?.redirectLink} class="btn btn-commn-bg-primary w-100">View More</Link>

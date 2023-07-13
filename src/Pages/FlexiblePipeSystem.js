@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Components/header'
 import Footer from '../Components/footer'
-import Modal from 'react-modal';
-import OwlCarousel from 'react-owl-carousel';
+import Modal from 'react-bootstrap/Modal';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { useLocation, useSearchParams, useNavigate } from 'react-router-dom';
@@ -86,6 +85,7 @@ import BusDuctBellow from "../Assets/Images/upgrade_products/Product_Header_Imag
 import ProductCard from '../Components/productCard';
 import { FlexiblePipePaths } from '../constant';
 import { customStyles } from '../helper';
+import ProductPageComponent from '../Components/ProductPageComponent';
 
 const FlexiblePipeSystem = () => {
 
@@ -343,70 +343,26 @@ const FlexiblePipeSystem = () => {
     return (
         <>
         <Header />
-        <div className="flexible_pipe_system products_category">
-            <section>
-                <div className="container bg_gray_200">
-                    <div className="row mx-0 product_top_header ps-3 pe-3 pt-5 pb-5">
-                        <div className="col-lg-4">
-                            <p className="mb-0 fs_12">Lorem ipsum dolor sit, us, debitis qui sed totam autem quam sapiente! </p>                
-                        </div>
-                        <diV className="col-lg-8">
-                            <OwlCarousel className='owl-theme product-owl-carousel' {...productOwlCarouselSetting}>
-                                {
-                                    data?.map(el => (
-                                        <div className="item text-center clickme" onClick={() => setProductId(el?.id)} key={el?.id}>
-                                            <a className="" href="#" data-tag="seven">
-                                                <div className="pro_50 m-auto">
-                                                    <img src={el?.image} className="img-fluid"/>
-                                                </div>
-                                            </a>
-                                            <p className="mt-1 mb-1 text_secondary fs_10">{el?.title}</p>
-                                        </div> 
-                                    ))
-                                }
-                            </OwlCarousel>
-                        </diV>     
-                    </div>
-                </div>
-            </section>
 
-            {/* <!-- products list --> */}
-            <section className="product_list">
-                {
-                    data?.map(el => el?.id === displayCard
-                        ?
-                        <div className="container px-0 py-4 list active container-list">
-                            <div className=" product_grid_container">
-                                {
-                                    el?.products?.map(el => <ProductCard card={el} setModal={setModal} />) 
-                                }
+        <ProductPageComponent data={data} setProductId={setProductId} displayCard={displayCard} modal={modal} setModal={setModal} />
+
+        <Modal show={modal?.show} centered size="lg" onHide={() => setModal({})} animation={true} data-bs-backdrop="static">
+            <div className="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div className="modal-content br_6">
+                    <div className="modal-body pb-6 pt-6 text-left position-relative">
+                        <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: 0}}></button>
+                        <div className="row">
+                            <div className="col-lg-auto col-sm-auto">
+                                <div className="pro_200"> <img src={modal?.data?.images?.[0]}/></div>
+                            </div>
+                            <div className="col-lg-8 col-sm-8">
+                                <h3>{modal?.data?.title}</h3>
+                                <p className="mb-0 fs_12">{modal?.data?.description}</p>
                             </div>
                         </div>
-                        :
-                        ""
-                    )
-                }
-            </section>
-        </div>
-
-        <Modal
-            isOpen={modal?.show}
-            // onRequestClose={() => setModal({})}
-            style={customStyles}
-            contentLabel="Product Modal"
-        >
-                <div className="modal-body pb-6 pt-6 text-left position-relative">
-                    <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: 0}} data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div className="row">
-                        <div className="col-lg-auto col-sm-auto">
-                            <div className="pro_200"> <img src={modal?.data?.images?.[0]}/></div>
-                        </div>
-                        <div className="col-lg-8 col-sm-8">
-                            <h3>{modal?.data?.title}</h3>
-                            <p className="mb-0 fs_12">{modal?.data?.description}</p>
-                        </div>
                     </div>
                 </div>
+            </div>
         </Modal>
 
         <Footer />

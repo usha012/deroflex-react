@@ -11,10 +11,10 @@ import DoubleArchData from "../JSON/FlexiblePipeSystem/DoubleArchExpansion.json"
 import ElbowExpansionData from "../JSON/FlexiblePipeSystem/ElbowExpansion.json"
 import ReducerExpansionData from "../JSON/FlexiblePipeSystem/ReducerExpansion.json"
 import UnionRubberData from "../JSON/FlexiblePipeSystem/UnionRubberBellow.json"
-import { customStyles, productRouteCapitalizeEachLetter } from '../helper'
+import { productRouteCapitalizeEachLetter } from '../helper'
 import Footer from '../Components/footer'
 import Header from '../Components/header'
-import Modal from 'react-modal'
+import Modal from 'react-bootstrap/Modal';
 
 const FlexiblePipeSystemDetail = () => {
 
@@ -131,37 +131,36 @@ const FlexiblePipeSystemDetail = () => {
                 </section>
             </div>
 
-            <Modal
-                isOpen={modal?.show}
-                // onRequestClose={() => setModal({})}
-                style={customStyles}
-                contentLabel="Product Detail Modal"
-            >
-                    <div className="modal-body pb-6 pt-6 text-left position-relative">
-                        <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: 0}}></button>
-                        <div class="row">
-                            <div class="col-lg-auto col-sm-auto">
-                                <div class="pro_200">
-                                    <img src={img} alt= {productRouteCapitalizeEachLetter(product)} />
+            <Modal show={modal?.show} centered size="lg" onHide={() => setModal({})} animation={true} data-bs-backdrop="static">
+                <div className="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                    <div className="modal-content br_6">
+                        <div className="modal-body pb-6 pt-6 text-left position-relative">
+                            <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: 0}}></button>
+                            <div class="row">
+                                <div class="col-lg-auto col-sm-auto">
+                                    <div class="pro_200">
+                                        <img src={img} alt= {productRouteCapitalizeEachLetter(product)} />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-8 col-sm-8">
-                                <h3>{modal?.data?.description} Deroflex Single Arch Expansion Joint(Rotating)</h3>
-                                <p class="mb-2 fs_12">
-                                    {modal?.data?.description} Single Arch Expansion Joint Both Side Flange - for pipe expansion, misalignment and vibration.
-                                </p>
-                                <ul class="fs_14">
-                                    <li class="list_inside">Deign :- Rotating </li>
-                                    <li class="list_inside">Standard Length :- 130 MM , 150 MM </li>
-                                    <li class="list_inside">Pressure :- 2 -25kg</li>
-                                    <li class="list_inside">Application :- Water , oil </li>
-                                    <li class="list_inside">Flange Materials – Mild Steel , Stainless steel </li>
-                                    <li class="list_inside">Materials :- EPDM , Synthetic ,Food Grade </li>
-                                </ul>
-        
+                                <div class="col-lg-8 col-sm-8">
+                                    <h3>{modal?.data?.description} Deroflex Single Arch Expansion Joint(Rotating)</h3>
+                                    <p class="mb-2 fs_12">
+                                        {modal?.data?.description} Single Arch Expansion Joint Both Side Flange - for pipe expansion, misalignment and vibration.
+                                    </p>
+                                    <ul class="fs_14">
+                                        <li class="list_inside">Deign :- Rotating </li>
+                                        <li class="list_inside">Standard Length :- 130 MM , 150 MM </li>
+                                        <li class="list_inside">Pressure :- 2 -25kg</li>
+                                        <li class="list_inside">Application :- Water , oil </li>
+                                        <li class="list_inside">Flange Materials – Mild Steel , Stainless steel </li>
+                                        <li class="list_inside">Materials :- EPDM , Synthetic ,Food Grade </li>
+                                    </ul>
+            
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </Modal>
             <Footer />
         </>
