@@ -22,12 +22,12 @@ const ProductCard = ({card, setModal}) => {
 
   return (
     <div class="grid-item px-0 product_card_outer">
-        <div class="card text-center">
+        <div class="card text-center h-100">
             <Slider className="" style={{height: "190px", width: "250px"}} {...productItemOwlCarouselSetting}>
                 {
                     card?.images?.map(img => (
                         <div className={``}>
-                            <img src={img} style={{height: "190px", ObjectFit: "cover"}} className="d-block w-100" alt="Single Arch Expansion Joint" />
+                            <img src={img} style={{height: "190px", ObjectFit: "cover"}} className="d-block w-100" alt={card?.title} />
                         </div>
                     ))
                 }

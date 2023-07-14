@@ -50,7 +50,7 @@ import WireRope from "../Assets/Images/upgrade_products/Product_Header_Images/Vi
 
 import ProductPageComponent from "../Components/ProductPageComponent"
 
-const FlexiblePipeSystem = () => {
+const MechanicalSeal = () => {
 
     const [searchParams] = useSearchParams();
     const navigate = useNavigate()
@@ -666,46 +666,45 @@ const FlexiblePipeSystem = () => {
                                 <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary mb-0">Buy Now</a></span> 
                             </div>
 
-							{
-								modal?.data?.property?.length
-								?
-								<div class="col-lg-auto">
-									{
-										modal?.data?.property?.slice(0, 5)?.map(p => (
-											<div class="products_property">
-												<p class="mb-1 feature_title">{p?.name}</p>
-												<p class="mb-1">
-													{ p?.data?.map(badge => <span class="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
-												</p>
-											</div>
-										))
-									}
-									{
-										modal?.showMore
-										?
-										modal?.data?.property?.slice(5)?.map(p => (
-											<div class="products_property">
-												<p class="mb-1 feature_title">{p?.name}</p>
-												<p class="mb-1">
-													{ p?.data?.map(badge => <span class="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
-												</p>
-											</div>
-										))
-										:
-										""
-									}
-									{
-										modal?.showMore
-										?
-										<p id="showLessButton" class="showLessButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: false})}>Show less</p>
-										:
-										<p id="showMoreButton" class="showMoreButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: true})}>Show more</p>
-									}
-								</div>
-								:
-								""
-							}
-                            
+                            {
+                              modal?.data?.property?.length
+                              ?
+                              <div class="col-lg-auto">
+                                {
+                                  modal?.data?.property?.slice(0, 5)?.map(p => (
+                                    <div class="products_property">
+                                      <p class="mb-1 feature_title">{p?.name}</p>
+                                      <p class="mb-1">
+                                        { p?.data?.map(badge => <span class="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
+                                      </p>
+                                    </div>
+                                  ))
+                                }
+                                {
+                                  modal?.showMore
+                                  ?
+                                  modal?.data?.property?.slice(5)?.map(p => (
+                                    <div class="products_property">
+                                      <p class="mb-1 feature_title">{p?.name}</p>
+                                      <p class="mb-1">
+                                        { p?.data?.map(badge => <span class="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
+                                      </p>
+                                    </div>
+                                  ))
+                                  :
+                                  ""
+                                }
+                                {
+                                  modal?.showMore
+                                  ?
+                                  <p id="showLessButton" class="showLessButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: false})}>Show less</p>
+                                  :
+                                  <p id="showMoreButton" class="showMoreButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: true})}>Show more</p>
+                                }
+                              </div>
+                              :
+                              ""
+                            }
                         </div>
                     </div>
                 </div>
@@ -717,4 +716,4 @@ const FlexiblePipeSystem = () => {
     )
 }
 
-export default FlexiblePipeSystem
+export default MechanicalSeal

@@ -346,11 +346,11 @@ const FlexiblePipeSystem = () => {
 
         <ProductPageComponent data={data} setProductId={setProductId} displayCard={displayCard} modal={modal} setModal={setModal} />
 
-        <Modal show={modal?.show} centered size="lg" onHide={() => setModal({})} animation={true} data-bs-backdrop="static">
-            <div className="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <Modal show={modal?.show} centered size="xl" onHide={() => setModal({})} animation={true} backdrop="static">
+            <div className="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable m-0">
                 <div className="modal-content br_6">
                     <div className="modal-body pb-6 pt-6 text-left position-relative">
-                        <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: 0}}></button>
+                        <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: "2rem", top: "1rem"}}></button>
                         <div className="row">
                             <div className="col-lg-auto col-sm-auto">
                                 <div className="pro_200"> <img src={modal?.data?.images?.[0]}/></div>

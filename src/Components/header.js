@@ -1,12 +1,12 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
 
     const navigate = useNavigate()
 
     const redirect = (e, productType, id) => {
-        e.preventDefault();
+        e.stopPropagation()
         let url = ""
         switch(productType) { 
             case "flexiblePipeSystem":
@@ -39,148 +39,148 @@ function Header() {
                         <div className="collapse navbar-collapse header_nav" id="navbarSupportedContent">
                             <ul className="navbar-nav  me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link  active" aria-current="page" href="/">Home</a>
+                                    <Link className="nav-link  active" aria-current="page" to="/">Home</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="#">Corporate overview</a>
+                                    <a className="nav-link" aria-current="page">Corporate overview</a>
                                 </li>
 
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="#">market segment</a>
+                                    <a className="nav-link" aria-current="page">market segment</a>
                                 </li>
                                 
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" >
+                                    <a className="nav-link" >
                                         products
                                     </a>
                                     <ul className="sub-menu product_sub_menu commn_sub_menu_height px-2 pb-3">                                    
                                         <div className="container">
                                             <div className="micro_menu row mx-0 d-flex">
 
-                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="flexiblePipeSystem">
+                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="flexiblePipeSystem" onClick={e => redirect(e, "flexiblePipeSystem")}>
                                                     <li className="clickme micro_menu_li_head" onClick={e => redirect(e, "flexiblePipeSystem")}>
                                                         <span className="inner_item">Flexible Pipe System</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexiblePipeSystem" pageId="one" onClick={e => redirect(e, "flexiblePipeSystem", "one")}>
-                                                        <span className="headerCustomMenu" productType="flexiblePipeSystem" pageId="one">Rubber Expansion Bellow </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem", "one")}>
+                                                        <span className="headerCustomMenu">Rubber Expansion Bellow </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexiblePipeSystem" pageId="two" onClick={e => redirect(e, "flexiblePipeSystem", "two")}>
-                                                        <span className="headerCustomMenu" productType="flexiblePipeSystem" pageId="two">Stainless steel bellow</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem", "two")}>
+                                                        <span className="headerCustomMenu">Stainless steel bellow</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexiblePipeSystem" pageId="three" onClick={e => redirect(e, "flexiblePipeSystem", "three")}>
-                                                        <span className="headerCustomMenu" productType="flexiblePipeSystem" pageId="three">Fabric bellow</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem", "three")}>
+                                                        <span className="headerCustomMenu">Fabric bellow</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexiblePipeSystem" pageId="four" onClick={e => redirect(e, "flexiblePipeSystem", "four")}>
-                                                        <span className="headerCustomMenu" productType="flexiblePipeSystem" pageId="four">Pneumatic Air Bellow </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem", "four")}>
+                                                        <span className="headerCustomMenu">Pneumatic Air Bellow </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexiblePipeSystem" pageId="five" onClick={e => redirect(e, "flexiblePipeSystem", "five")}>
-                                                        <span className="headerCustomMenu" productType="flexiblePipeSystem" pageId="five">PTFE Bellow  </span></
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem", "five")}>
+                                                        <span className="headerCustomMenu">PTFE Bellow  </span></
                                                     li>  
-                                                    <li className="headerCustomMenu" productType="flexiblePipeSystem" pageId="six" onClick={e => redirect(e, "flexiblePipeSystem", "six")}>
-                                                        <span className="headerCustomMenu" productType="flexiblePipeSystem" pageId="six">Protective bellow  </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem", "six")}>
+                                                        <span className="headerCustomMenu">Protective bellow  </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexiblePipeSystem" pageId="seven" onClick={e => redirect(e, "flexiblePipeSystem", "seven")}>
-                                                        <span className="headerCustomMenu" productType="flexiblePipeSystem" pageId="seven">Bus Duct Bellow  </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem", "seven")}>
+                                                        <span className="headerCustomMenu">Bus Duct Bellow  </span>
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="vibrationIsolation">
+                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="vibrationIsolation" onClick={e => redirect(e, "vibrationIsolation")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "vibrationIsolation")}>
                                                         <span className="">Vibration Isolation</span>
                                                     </li>                                        
-                                                    <li className="headerCustomMenu" productType="vibrationIsolation" pageId="one" onClick={e => redirect(e, "vibrationIsolation", "one")} >
-                                                        <span className="headerCustomMenu" productType="vibrationIsolation" pageId="one">Pad</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "vibrationIsolation", "one")} >
+                                                        <span className="headerCustomMenu">Pad</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="vibrationIsolation" pageId="two" onClick={e => redirect(e, "vibrationIsolation", "two")}>
-                                                        <span className="headerCustomMenu" productType="vibrationIsolation" pageId="two">Rubber and Metal Bonded anti vibration mounded</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "vibrationIsolation", "two")}>
+                                                        <span className="headerCustomMenu">Rubber and Metal Bonded anti vibration mounded</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="vibrationIsolation" pageId="three" onClick={e => redirect(e, "vibrationIsolation", "three")}>
-                                                        <span className="headerCustomMenu" productType="vibrationIsolation" pageId="three">Spring Based Vibration Isolator </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "vibrationIsolation", "three")}>
+                                                        <span className="headerCustomMenu">Spring Based Vibration Isolator </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="vibrationIsolation" pageId="four" onClick={e => redirect(e, "vibrationIsolation", "four")}>
-                                                        <span className="headerCustomMenu" productType="vibrationIsolation" pageId="four">Riser Isolator Support </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "vibrationIsolation", "four")}>
+                                                        <span className="headerCustomMenu">Riser Isolator Support </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="vibrationIsolation" pageId="five" onClick={e => redirect(e, "vibrationIsolation", "five")}>
-                                                        <span className="headerCustomMenu" productType="vibrationIsolation" pageId="five">Wire Rope Suspension System </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "vibrationIsolation", "five")}>
+                                                        <span className="headerCustomMenu">Wire Rope Suspension System </span>
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li  w-auto headerCustomMenu" productType="mechanicalSeal">
+                                                <div className="micro_menu_li  w-auto headerCustomMenu" productType="mechanicalSeal" onClick={e => redirect(e, "mechanicalSeal")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "mechanicalSeal")}>
                                                         <span className="">Mechanical seal</span>
                                                     </li>                                        
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="one" onClick={e => redirect(e, "mechanicalSeal", "one")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="one">Rubber Bellow Seal </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "one")}>
+                                                        <span className="headerCustomMenu">Rubber Bellow Seal </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="two" onClick={e => redirect(e, "mechanicalSeal", "two")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="two">Metal Bellow Seal </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "two")}>
+                                                        <span className="headerCustomMenu">Metal Bellow Seal </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="three" onClick={e => redirect(e, "mechanicalSeal", "three")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="three">Teflon Bellow Seal </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "three")}>
+                                                        <span className="headerCustomMenu">Teflon Bellow Seal </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="four" onClick={e => redirect(e, "mechanicalSeal", "four")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="four">Grundfos Mechanical seal </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "four")}>
+                                                        <span className="headerCustomMenu">Grundfos Mechanical seal </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="five" onClick={e => redirect(e, "mechanicalSeal", "five")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="five">Multi Spring Mechanical Seal  </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "five")}>
+                                                        <span className="headerCustomMenu">Multi Spring Mechanical Seal  </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="six" onClick={e => redirect(e, "mechanicalSeal", "six")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="six">Single Spring Mechanical Seal  </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "six")}>
+                                                        <span className="headerCustomMenu">Single Spring Mechanical Seal  </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="seven" onClick={e => redirect(e, "mechanicalSeal", "seven")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="seven">Agitator Seal  </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "seven")}>
+                                                        <span className="headerCustomMenu">Agitator Seal  </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="eight" onClick={e => redirect(e, "mechanicalSeal", "eight")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="eight">Cartridge Seal  </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "eight")}>
+                                                        <span className="headerCustomMenu">Cartridge Seal  </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="mechanicalSeal" pageId="nine" onClick={e => redirect(e, "mechanicalSeal", "nine")}>
-                                                        <span className="headerCustomMenu" productType="mechanicalSeal" pageId="nine">Dry Running Seal  </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal", "nine")}>
+                                                        <span className="headerCustomMenu">Dry Running Seal  </span>
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li  w-auto headerCustomMenu" productType="flexibleHose">
+                                                <div className="micro_menu_li  w-auto headerCustomMenu" productType="flexibleHose" onClick={e => redirect(e, "flexibleHose")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "flexibleHose")}>
                                                         <span className="">Flexible Hose </span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexibleHose" pageId="one" onClick={e => redirect(e, "flexibleHose", "one")}>
-                                                        <span className="headerCustomMenu" productType="flexibleHose" pageId="one">Stainless Steel Hose</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexibleHose", "one")}>
+                                                        <span className="headerCustomMenu">Stainless Steel Hose</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexibleHose" pageId="two" onClick={e => redirect(e, "flexibleHose", "two")}>
-                                                        <span className="headerCustomMenu" productType="flexibleHose" pageId="two">Rubber Hose</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexibleHose", "two")}>
+                                                        <span className="headerCustomMenu">Rubber Hose</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexibleHose" pageId="three" onClick={e => redirect(e, "flexibleHose", "three")}>
-                                                        <span className="headerCustomMenu" productType="flexibleHose" pageId="three">Spiral Hose</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexibleHose", "three")}>
+                                                        <span className="headerCustomMenu">Spiral Hose</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="flexibleHose" pageId="four" onClick={e => redirect(e, "flexibleHose", "four")}>
-                                                        <span className="headerCustomMenu" productType="flexibleHose" pageId="four">PTFE Hose </span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "flexibleHose", "four")}>
+                                                        <span className="headerCustomMenu">PTFE Hose </span>
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="customized">
+                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="customized" onClick={e => redirect(e, "customized")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "customized")}>
                                                         <span className="">Customized</span>
                                                     </li>                                        
-                                                    <li className="headerCustomMenu" productType="customized" pageId="one" onClick={e => redirect(e, "customized", "one")}>
-                                                        <span className="headerCustomMenu" productType="customized" pageId="one">Piston Seal</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "customized", "one")}>
+                                                        <span className="headerCustomMenu">Piston Seal</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="customized" pageId="two" onClick={e => redirect(e, "customized", "two")}>
-                                                        <span className="headerCustomMenu" productType="customized" pageId="two">O-ring</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "customized", "two")}>
+                                                        <span className="headerCustomMenu">O-ring</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="customized" pageId="three" onClick={e => redirect(e, "customized", "three")}>
-                                                        <span className="headerCustomMenu" productType="customized" pageId="three">Channel</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "customized", "three")}>
+                                                        <span className="headerCustomMenu">Channel</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="customized" pageId="four" onClick={e => redirect(e, "customized", "four")}>
-                                                        <span className="headerCustomMenu" productType="customized" pageId="four">Gasket</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "customized", "four")}>
+                                                        <span className="headerCustomMenu">Gasket</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="customized" pageId="five" onClick={e => redirect(e, "customized", "five")}>
-                                                        <span className="headerCustomMenu" productType="customized" pageId="five"> Coupling</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "customized", "five")}>
+                                                        <span className="headerCustomMenu"> Coupling</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="customized" pageId="six" onClick={e => redirect(e, "customized", "six")}>
-                                                        <span className="headerCustomMenu" productType="customized" pageId="six">Rubber Sheet</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "customized", "six")}>
+                                                        <span className="headerCustomMenu">Rubber Sheet</span>
                                                     </li>
-                                                    <li className="headerCustomMenu" productType="customized" pageId="seven" onClick={e => redirect(e, "customized", "seven")}>
-                                                        <span className="headerCustomMenu" productType="customized" pageId="seven">Mat</span>
+                                                    <li className="headerCustomMenu" onClick={e => redirect(e, "customized", "seven")}>
+                                                        <span className="headerCustomMenu">Mat</span>
                                                     </li>
                                                 </div>
                                             </div>
@@ -188,7 +188,7 @@ function Header() {
                                     </ul> 
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link  active" aria-current="page" href="#">contact us</a>
+                                    <a className="nav-link  active" aria-current="page">contact us</a>
                                 </li>
                             </ul>
                         </div>
