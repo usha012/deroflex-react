@@ -27,7 +27,7 @@ export const productRouteCapitalizeEachLetter = str => {
 }
 
 export const productOwlCarouselSetting = {
-    loop:true,
+    loop:false,
     margin:10,
     autoplay:true,
     nav:true,

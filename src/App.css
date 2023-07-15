@@ -1,0 +1,13 @@
+/* flexible hose detail css */
+.mainBannerImg {
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.ask_ques_wrapper {
+  border: 2px solid #ff5e15;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 17px;
+}

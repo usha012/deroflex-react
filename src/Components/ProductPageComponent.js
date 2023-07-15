@@ -17,7 +17,7 @@ const ProductPageComponent = ({ data, setProductId, displayCard, setModal }) => 
                                 {
                                     data?.map(el => (
                                         <div className="item text-center clickme" onClick={() => setProductId(el?.id)} key={el?.id}>
-                                            <a className="" href="#" data-tag="seven">
+                                            <a>
                                                 <div className="pro_50 m-auto">
                                                     <img src={el?.image} className="img-fluid"/>
                                                 </div>
