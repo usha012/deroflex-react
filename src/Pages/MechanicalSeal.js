@@ -6,15 +6,24 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { useLocation, useSearchParams, useNavigate } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
 
-import Pad from "../Assets/Images/upgrade_products/Product_Header_Images/Vibration_Isolation/pad.png"
-    import Pad_1 from "../Assets/Images/upgrade_products/Vibration_Isolation/pad/Bridge_bearing_pad/p1.jpg"
-    import Pad_2 from "../Assets/Images/upgrade_products/Vibration_Isolation/pad/Cork_Sandwich_Pad/p1.jpg"
-    import Pad_3 from "../Assets/Images/upgrade_products/Vibration_Isolation/pad/EPDM_Rubber_Pad/p1.jpg"
-    import Pad_4 from "../Assets/Images/upgrade_products/Vibration_Isolation/pad/Metal_Sandwich_Pad/p1.jpg"
-    import Pad_5 from "../Assets/Images/upgrade_products/Vibration_Isolation/pad/Ribbed_Mounting_Pad/p1.jpg"
-    import Pad_6 from "../Assets/Images/upgrade_products/Vibration_Isolation/pad/Square_Cell_Rubber _Pad/p1.jpg"
+import Dummy  from "../Assets/Images/dummyImage/product.png"
+import RubberBellowSeal   from "../Assets/Images/upgrade_products/Product_Header_Images/Mechanical_Seal/rbuber_Seal.png"
+    import  RubberBellowSeal_11 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF62/p1.jpg"
+    import  RubberBellowSeal_12 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF62/p2.jpg"
+    import  RubberBellowSeal_3 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF8/p1.jpg"
+    import  RubberBellowSeal_4 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF80/p1.jpg"
+    import  RubberBellowSeal_51 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF4/p1.jpg"
+    import  RubberBellowSeal_52 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF4/p2.jpg"
+    import  RubberBellowSeal_61 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF27/p1.jpg"
+    import  RubberBellowSeal_62 from "../Assets/Images/upgrade_products/Mechanical_seal/Rubber_Bellow_seal/ELASTOMER_BELOW_UNBALANCE_SEAL_DF27/p2.jpg"
 
-import Mount from "../Assets/Images/upgrade_products/Product_Header_Images/Vibration_Isolation/mount.png"
+
+
+
+
+
+
+import Mount from "../Assets/Images/upgrade_products/Product_Header_Images/Mechanical_Seal/metal_bellow.png"
     import Mount_1 from "../Assets/Images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Genset_mounts/p1.jpg"
     import Mount_21 from "../Assets/Images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Sandwich_Mounting/p1.jpg"
     import Mount_22 from "../Assets/Images/upgrade_products/Vibration_Isolation/Rubber_Metal_Bonded_anti_vibration_mounded/Sandwich_Mounting/p2.jpeg"
@@ -60,17 +69,17 @@ const MechanicalSeal = () => {
     const data = [
         {
             id: "one", 
-            title: "Pad", 
-            image: Pad, 
+            title: "Rubber Bellow Seal", 
+            image: RubberBellowSeal, 
             products: [
                 {
                     id: "card_" + Math.ceil(Math.random() * 1000000000),
-                    title: "Elastomeric Bridge Bearing Pad  ",
+                    title: "ELASTOMER BELOW UNBALANCE SEAL-DF62",
                     modal: true,
                     buy: true,
                     description:
                       "Elastomeric Bearing Pad Neoprene rubber with both side plane plate - are easy to install in bridges.",
-                    images: [ Pad_1 ],
+                    images: [ RubberBellowSeal_11, RubberBellowSeal_12 ],
                     features: [
                       "Bridge Bearing Pads are specially designed with one or multiple layers of elastomers that are bonded to internal steel laminates. These bearing pads are widely used in the construction of bridges and other structures for bearing the vertical load",
                       "Design load of the bearing is equivalent to 10 M Pa",
@@ -90,12 +99,12 @@ const MechanicalSeal = () => {
                 },
                 {
                     id: "card_" + Math.ceil(Math.random() * 1000000000),
-                    title: "Deroflex Cork Sandwich Pad",
+                    title: "ELASTOMER BELOW UNBALANCE SEAL-DF90",
                     modal: true,
                     buy: true,
                     description:
                       "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    images: [ Pad_2 ],
+                    images: [ Dummy],
                     features: [
                       "Cork Sandwich Pad are laminated pads having thick close grained cork securely attached between two layers  alternate low-high ribbed  rubber pads",
                       "Offers highest level of sound attenuation and vibration controller"
@@ -112,103 +121,98 @@ const MechanicalSeal = () => {
                     ]
                 },
                 {
-                    id: "card_" + Math.ceil(Math.random() * 1000000000),
-                    title: "Deroflex EPDM Rubber Pad",
-                    modal: true,
-                    buy: true,
-                    description:
-                      "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    images: [ Pad_3 ],
-                    features: [
-                      "Ethylene Propylene Diene Monomer is known for working in operating temperature ranging from -45°C to + 120°C. Rubber Pad Mould with various type of shape  & various  layer of nylon and rubber",
-                      "it is extremely resistant to oxidation, U.V. Rays, Water, Weather and Ozone.",
-                      "Offers highest level of sound attenuation and vibration controller."
-                    ],
-                    property: [
-                      {name: "Shape", data: ["Square", "Round"]},
-                      {name: "Material", data: ["Neoprene", "Natural"]},
-                      {name: "Reduces", data: ["Vibrations"]},
-                      {name: "Size", data: [`3’’ x 3’’ | Max -  18’’ x 18’`]},
-                      {name: "Colour", data: ["Black"]},
-                      {name: "Thickness", data: ["10 MM -75 MM"]},
-                      {name: "ProductType", data: ["Machine Mounts"]},
-                      {name: "LoadCapacity", data: ["AS PER SIZE"]}
-                    ]
-                },
-                {
-                    id: "card_" + Math.ceil(Math.random() * 1000000000),
-                    title: "Deroflex Metal Sandwich Pad",
-                    modal: true,
-                    buy: true,
-                    description:
-                      "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    images: [ Pad_4 ],
-                    features: [
-                      "Metal Sandwich Pads are constructed of a steel plate bonded between ribbed and vibration pads.",
-                      "Designed for very high load capacity.",
-                    ],
-                    property: [
-                      {name: "Shape", data: ["Square"]},
-                      {name: "Material", data: ["Neoprene", "compounded rubber & Metal"]},
-                      {name: "Reduces", data: ["Vibrations"]},
-                      {name: "Size", data: [`3/4’’ x 3’’ x 3’’ | Max - 1’’ x 18’’ x 18’`]},
-                      {name: "Colour", data: ["Black"]},
-                      {name: "Thickness", data: ["10 MM -30 MM"]},
-                      {name: "ProductType", data: ["Machine Mounts"]},
-                      {name: "LoadCapacity", data: ["32400 LBS (14696 Kg)"]}
-                    ]
-                },
-                {
-                    id: "card_" + Math.ceil(Math.random() * 1000000000),
-                    title: "Deroflex Ribbed Mounting Pad",
-                    modal: true,
-                    buy: true,
-                    description:
-                      "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    images: [ Pad_5 ],
-                    features: [
-                      "Alternate high-low ribbed construction.",
-                      "Pads can be cut to be slightly larger than the size of the leg or machine, using shear or knife.",
-                      "Multiple layers of Ribbed Mounting Pad can be used to increase deflection."
-                    ],
-                    property: [
-                      {name: "Shape", data: ["Square","Round"]},
-                      {name: "Material", data: ["Neoprene", "Natural"]},
-                      {name: "Reduces", data: ["Vibrations"]},
-                      {name: "Size", data: [`3/4’’ x 3’’ x 3’’ | Max - 1’’ x 18’’ x 18’`]},
-                      {name: "Colour", data: ["Black"]},
-                      {name: "Hardness", data: ["75% - 85%"]},
-                      {name: "Thickness", data: ["10 MM"]},
-                      {name: "ProductType", data: ["Machine Mounts"]},
-                      {name: "LoadCapacity KG", data: ["MIN 402 / MAX 16200"]},
-                      {name: "LoadCapacity LBS", data: ["MIN 360 / MAX 16200"]}
-                    ] 
-                },
-                {
-                    id: "card_" + Math.ceil(Math.random() * 1000000000),
-                    title: "Deroflex Square Cell Rubber Pad",
-                    modal: true,
-                    buy: true,
-                    description:
-                      "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                    images: [ Pad_6 ],
-                    features: [
-                      "Square Cell Rubber Pads are constructed of three layers of square cell rubber and steel plates of 1mm / 1.5 mm thickness.",
-                      "The square cell design the pad offers better grip on the floor surface.",
-                      "Higher load capacity than Ribbed Multi Layer Pad."
-                    ],
-                    property: [
-                      {name: "Shape", data: ["Square"]},
-                      {name: "Material", data: ["Neoprene"]},
-                      {name: "Reduces", data: ["Vibrations"]},
-                      {name: "Size", data: [`7/8’’ x 3’’ x 3’’ | Max - 7/8’’ x 18’’ x 18’`]},
-                      {name: "Colour", data: ["Black"]},
-                      {name: "Hardness", data: ["75% - 85%"]},
-                      {name: "Thickness", data: ["10 MM"]},
-                      {name: "ProductType", data: ["Machine Mounts"]},
-                      {name: "LoadCapacity", data: ["AS PER SIZE"]}
-                    ]
-                }            
+                  id: "card_" + Math.ceil(Math.random() * 1000000000),
+                  title: "ELASTOMER BELOW UNBALANCE SEAL-DF8 ",
+                  modal: true,
+                  buy: true,
+                  description:
+                    "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                  images: [ RubberBellowSeal_3],
+                  features: [
+                    "Cork Sandwich Pad are laminated pads having thick close grained cork securely attached between two layers  alternate low-high ribbed  rubber pads",
+                    "Offers highest level of sound attenuation and vibration controller"
+                  ],
+                  property: [
+                    {name: "Shape", data: ["Square", "Round"]},
+                    {name: "Material", data: ["Neoprene", "compounded rubber & Cork"]},
+                    {name: "Reduces", data: ["Vibrations"]},
+                    {name: "Size", data: [`Min - 7/8’’ x 3’’ x 3’’ | Max - 7/8’’ x 18’’ x 18’’`]},
+                    {name: "Colour", data: ["Black"]},
+                    {name: "ProductType", data: ["Machine Mounts"]},
+                    {name: "LoadCapacity", data: ["AS PER SIZE"]},
+                    {name: "Hardness", data: ["75% - 85%"]}
+                  ]
+              },
+              {
+                id: "card_" + Math.ceil(Math.random() * 1000000000),
+                title: "ELASTOMER BELOW UNBALANCE SEAL-DF80",
+                modal: true,
+                buy: true,
+                description:
+                  "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                images: [ RubberBellowSeal_4],
+                features: [
+                  "Cork Sandwich Pad are laminated pads having thick close grained cork securely attached between two layers  alternate low-high ribbed  rubber pads",
+                  "Offers highest level of sound attenuation and vibration controller"
+                ],
+                property: [
+                  {name: "Shape", data: ["Square", "Round"]},
+                  {name: "Material", data: ["Neoprene", "compounded rubber & Cork"]},
+                  {name: "Reduces", data: ["Vibrations"]},
+                  {name: "Size", data: [`Min - 7/8’’ x 3’’ x 3’’ | Max - 7/8’’ x 18’’ x 18’’`]},
+                  {name: "Colour", data: ["Black"]},
+                  {name: "ProductType", data: ["Machine Mounts"]},
+                  {name: "LoadCapacity", data: ["AS PER SIZE"]},
+                  {name: "Hardness", data: ["75% - 85%"]}
+                ]
+            },
+            {
+              id: "card_" + Math.ceil(Math.random() * 1000000000),
+              title: "ELASTOMER BELOW UNBALANCE SEAL-DF4",
+              modal: true,
+              buy: true,
+              description:
+                "Some quick example text to build on the card title and make up the bulk of the card's content.",
+              images: [ RubberBellowSeal_51, RubberBellowSeal_52],
+              features: [
+                "Cork Sandwich Pad are laminated pads having thick close grained cork securely attached between two layers  alternate low-high ribbed  rubber pads",
+                "Offers highest level of sound attenuation and vibration controller"
+              ],
+              property: [
+                {name: "Shape", data: ["Square", "Round"]},
+                {name: "Material", data: ["Neoprene", "compounded rubber & Cork"]},
+                {name: "Reduces", data: ["Vibrations"]},
+                {name: "Size", data: [`Min - 7/8’’ x 3’’ x 3’’ | Max - 7/8’’ x 18’’ x 18’’`]},
+                {name: "Colour", data: ["Black"]},
+                {name: "ProductType", data: ["Machine Mounts"]},
+                {name: "LoadCapacity", data: ["AS PER SIZE"]},
+                {name: "Hardness", data: ["75% - 85%"]}
+              ]
+          },
+          {
+            id: "card_" + Math.ceil(Math.random() * 1000000000),
+            title: "ELASTOMER BELOW UNBALANCE SEAL-DF4",
+            modal: true,
+            buy: true,
+            description:
+              "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            images: [ RubberBellowSeal_51, RubberBellowSeal_52],
+            features: [
+              "Cork Sandwich Pad are laminated pads having thick close grained cork securely attached between two layers  alternate low-high ribbed  rubber pads",
+              "Offers highest level of sound attenuation and vibration controller"
+            ],
+            property: [
+              {name: "Shape", data: ["Square", "Round"]},
+              {name: "Material", data: ["Neoprene", "compounded rubber & Cork"]},
+              {name: "Reduces", data: ["Vibrations"]},
+              {name: "Size", data: [`Min - 7/8’’ x 3’’ x 3’’ | Max - 7/8’’ x 18’’ x 18’’`]},
+              {name: "Colour", data: ["Black"]},
+              {name: "ProductType", data: ["Machine Mounts"]},
+              {name: "LoadCapacity", data: ["AS PER SIZE"]},
+              {name: "Hardness", data: ["75% - 85%"]}
+            ]
+        },
+                           
             ]
         },
         {
@@ -223,7 +227,7 @@ const MechanicalSeal = () => {
                     buy: true,
                     description:
                       "Genset Mount are covered with metal body  provide easy fitting below the Machine & ensures a long fatigue life.",
-                    images: [ Mount_1 ],
+                    images: [RubberBellowSeal_3 ],
                     features: [
                       "The Genset mounts are covered with metal body on the top and bottom to prevent any oil from entering and damaging the mounts. The generator mounts can be mounted on both external and internal generator frames. The compact design of the generator mounts provide easy fitting below the generator. The thick metallics base flange of the generator mounts ensures a long fatigue life"
                     ],
