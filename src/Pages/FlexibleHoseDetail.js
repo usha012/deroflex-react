@@ -42,22 +42,22 @@ const FlexibleHoseDetail = () => {
     return (
         <>
             <Header />
-            <div class="productview_wrapper">
-                <div class="row">
-                    <img id="pageBannerImage" src={data?.pageBannerImage} class="mainBannerImg" />
+            <div className="productview_wrapper">
+                <div className="row">
+                    <img id="pageBannerImage" src={data?.pageBannerImage} className="mainBannerImg" />
                 </div>
-                <div class="container">
-                    <div class="row py-5">
-                        <div class="col-lg-4">
-                            <div class="pro_400 m-auto">
+                <div className="container">
+                    <div className="row py-5">
+                        <div className="col-lg-4">
+                            <div className="pro_400 m-auto">
                                 <img src={data?.pageImage} id="pageImage" /> 
                             </div>
                         </div>
-                        <div class="col-lg-8">
+                        <div className="col-lg-8">
                             <h3>{data?.pageTitle}</h3>
                             <p>{data?.pageDescription}</p>
-                            <div class="ask_ques_wrapper">
-                                <p class="mb-0"><a>Ask Question</a>/ <a>This product</a></p>
+                            <div className="ask_ques_wrapper">
+                                <p className="mb-0"><a>Ask Question</a>/ <a>This product</a></p>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const FlexibleHoseDetail = () => {
                     <div className="container px-0 py-4 list active container-list">
                         <div className=" product_grid_container">
                             {
-                                data?.products?.map(el => <ProductCard card={el} />) 
+                                data?.products?.map(el => <ProductCard card={el} key={el?.id}/>) 
                             }
                         </div>
                     </div>

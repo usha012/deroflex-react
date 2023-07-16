@@ -82,9 +82,7 @@ import BusDuctBellow from "../Assets/Images/upgrade_products/Product_Header_Imag
     import BusDuctBellow_4 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Bus_Duct_Bellow/Railway_Rectangular_Bellow/p1.jpg"
     import BusDuctBellow_5 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Bus_Duct_Bellow/Railway_Rectangular_Bellow/p2.png"
 
-import ProductCard from '../Components/productCard';
 import { FlexiblePipePaths } from '../constant';
-import { customStyles } from '../helper';
 import ProductPageComponent from '../Components/ProductPageComponent';
 
 const FlexiblePipeSystem = () => {
@@ -318,15 +316,6 @@ const FlexiblePipeSystem = () => {
             ]
         }
     ]
-
-    const productOwlCarouselSetting = {
-        loop:true,
-        margin:10,
-        autoplay:true,
-        nav:true,
-        dots:false,
-        responsive:{ 0:{ items:1 }, 600:{ items:3 }, 1000:{ items:5 } }
-    }
 
     const [displayCard, setDisplayCard] = useState("one")
     const [modal, setModal] = useState({data: {}, show: false})

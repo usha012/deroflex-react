@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -26,11 +27,11 @@ const Footer = () => {
                                 </ul>  
                             </div>
                             <ul className="social-icons  wt-social-links footer-social-icon">
-                                <li><a href="javascript:void(0);" className="fa fa-google"></a></li>
-                                <li><a href="javascript:void(0);" className="fa fa-rss"></a></li>
-                                <li><a href="javascript:void(0);" className="fa fa-facebook"></a></li>
-                                <li><a href="javascript:void(0);" className="fa fa-twitter"></a></li>
-                                <li><a href="javascript:void(0);" className="fa fa-linkedin"></a></li>
+                                <li><a className="fa fa-google"></a></li>
+                                <li><a className="fa fa-rss"></a></li>
+                                <li><a className="fa fa-facebook"></a></li>
+                                <li><a className="fa fa-twitter"></a></li>
+                                <li><a className="fa fa-linkedin"></a></li>
                             </ul> 
                         </div>                              
                         
@@ -42,11 +43,11 @@ const Footer = () => {
                                 <div className="widget widget_services">
                                     <h3 className="widget-title">Useful links</h3>
                                     <ul>
-                                        <li><a href="about-1.html">About</a></li>
-                                        <li><a href="our-prices.html">Pricing Plan </a></li>
-                                        <li><a href="Faq.html">FAQ</a></li>
-                                        <li><a href="team-single.html">Our Team </a></li>
-                                        <li><a href="services-1.html">Services </a></li>
+                                        <li><Link to="/about-us">About</Link></li>
+                                        <li><Link to="/our-prices">Pricing Plan </Link></li>
+                                        <li><Link to="/faq.html">FAQ</Link></li>
+                                        <li><Link to="/our-team">Our Team </Link></li>
+                                        <li><Link to="/services">Services </Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,8 +77,8 @@ const Footer = () => {
             <div className="wt-footer-bot-left d-flex justify-content-between">
                 <span className="copyrights-text">Copyright © 2023 <span className="site-text-primary">Deroflex</span></span>
                 <ul className="copyrights-nav"> 
-                    <li><a href="javascript:void(0);">Terms  &amp; Condition</a></li>
-                    <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                    <li><a>Terms  &amp; Condition</a></li>
+                    <li><a>Privacy Policy</a></li>
                     <li><a href="contact-1.html">Contact Us</a></li>
                 </ul>     
             </div>

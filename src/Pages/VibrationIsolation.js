@@ -627,32 +627,32 @@ const FlexiblePipeSystem = () => {
         <Modal show={modal?.show} centered size="xl" onHide={() => setModal({})} animation={true} backdrop="static">
         <div className="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable m-0">
                 <div className="modal-content br_6">
-                    <div class="modal-body p-6 custm_scroll text-left position-relative">
-                        <button type="button" class="btn-close position-absolute" onClick={() => setModal()} style={{right: "2rem", top: "1rem"}}></button>
-                        <div class="row mb-0 justify-content-center ">
-                            <div class="col-lg-4">
-                                <div class="float-start me-5 modal_product_img">
+                    <div className="modal-body p-6 custm_scroll text-left position-relative">
+                        <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: "2rem", top: "1rem"}}></button>
+                        <div className="row mb-0 justify-content-center ">
+                            <div className="col-lg-4">
+                                <div className="float-start me-5 modal_product_img">
                                     <img src={modal?.data?.images?.[0]} alt={modal?.data?.title} />
                                 </div>
                             </div>
-                            <div class="col-lg-4 border-end"> 
-                                <h3 class="f-w500">{modal?.data?.title}</h3>
+                            <div className="col-lg-4 border-end"> 
+                                <h3 className="f-w500">{modal?.data?.title}</h3>
                                 {
                                     modal?.data?.features?.length
                                     ?
                                     <>
-                                        <p class="fs_18 fw_500">Features and Benefits</p>
+                                        <p className="fs_18 fw_500">Features and Benefits</p>
                                         {
                                             modal?.data?.features?.length === 1
                                             ? 
-                                            <p class="fs_13">{modal?.data?.features?.[0]}</p>
+                                            <p className="fs_13">{modal?.data?.features?.[0]}</p>
                                             :
                                             ""
                                         }	
                                         {
                                             modal?.data?.features?.length > 1
                                             ? 
-                                            <ul class="mb-3 fs_14 ps-3"> 
+                                            <ul className="mb-3 fs_14 ps-3"> 
                                                 {modal?.data?.features?.map(feature => <li>{feature}</li>)}
                                             </ul>
                                             :
@@ -663,19 +663,19 @@ const FlexiblePipeSystem = () => {
                                     ""
                                 }
                                 
-                                <span class=""><a href="#" class=" buy_btn btn btn-commn-bg-primary mb-0">Buy Now</a></span> 
+                                <span className=""><a className=" buy_btn btn btn-commn-bg-primary mb-0">Buy Now</a></span> 
                             </div>
 
 							{
 								modal?.data?.property?.length
 								?
-								<div class="col-lg-auto">
+								<div className="col-lg-auto">
 									{
 										modal?.data?.property?.slice(0, 5)?.map(p => (
-											<div class="products_property">
-												<p class="mb-1 feature_title">{p?.name}</p>
-												<p class="mb-1">
-													{ p?.data?.map(badge => <span class="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
+											<div className="products_property">
+												<p className="mb-1 feature_title">{p?.name}</p>
+												<p className="mb-1">
+													{ p?.data?.map(badge => <span className="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
 												</p>
 											</div>
 										))
@@ -684,10 +684,10 @@ const FlexiblePipeSystem = () => {
 										modal?.showMore
 										?
 										modal?.data?.property?.slice(5)?.map(p => (
-											<div class="products_property">
-												<p class="mb-1 feature_title">{p?.name}</p>
-												<p class="mb-1">
-													{ p?.data?.map(badge => <span class="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
+											<div className="products_property">
+												<p className="mb-1 feature_title">{p?.name}</p>
+												<p className="mb-1">
+													{ p?.data?.map(badge => <span className="badge me-2 rounded-pill pills_primary">{badge}</span> ) }
 												</p>
 											</div>
 										))
@@ -697,9 +697,9 @@ const FlexiblePipeSystem = () => {
 									{
 										modal?.showMore
 										?
-										<p id="showLessButton" class="showLessButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: false})}>Show less</p>
+										<p id="showLessButton" className="showLessButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: false})}>Show less</p>
 										:
-										<p id="showMoreButton" class="showMoreButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: true})}>Show more</p>
+										<p id="showMoreButton" className="showMoreButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: true})}>Show more</p>
 									}
 								</div>
 								:

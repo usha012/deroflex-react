@@ -37,10 +37,10 @@ const ProductPageComponent = ({ data, setProductId, displayCard, setModal }) => 
                 {
                     data?.map(el => el?.id === displayCard
                         ?
-                        <div className="container px-0 py-4 list active container-list">
+                        <div className="container px-0 py-4 list active container-list" key={el?.id}>
                             <div className=" product_grid_container">
                                 {
-                                    el?.products?.map(el => <ProductCard card={el} setModal={setModal} />) 
+                                    el?.products?.map(el => <ProductCard card={el} setModal={setModal} key={el?.id}/>) 
                                 }
                             </div>
                         </div>

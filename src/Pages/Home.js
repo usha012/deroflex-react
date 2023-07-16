@@ -62,7 +62,7 @@ const Home = () => {
 						<div className="carousel-caption d-none d-md-block">
 							<h5 className="animate__animated animate__fadeInDown animate__slow">{el?.label}</h5>
 							<p className="animate__animated animate__fadeInDown animate__slow" >{el?.description}</p>
-							<p className="animate__animated animate__fadeInDown animate__slow" ><a className="#"> Know More</a></p>
+							<p className="animate__animated animate__fadeInDown animate__slow" ><a> Know More</a></p>
 						</div>
 					</div>
 				))
@@ -76,7 +76,7 @@ const Home = () => {
             <div className="carousel-caption d-none d-md-block">
                 <h5 className="animate__animated animate__fadeInDown animate__slow">First slide label</h5>
                 <p className="animate__animated animate__fadeInDown animate__slow" >Some representative placeholder content for the first slide.</p>
-                <p className="animate__animated animate__fadeInDown animate__slow" ><a className="#"> Know More</a></p>
+                <p className="animate__animated animate__fadeInDown animate__slow" ><a> Know More</a></p>
             </div>
           </div>
           <div className="carousel-item">
@@ -87,7 +87,7 @@ const Home = () => {
             <div className="carousel-caption d-none d-md-block">
                 <h5 className="animate__animated animate__fadeInDown animate__slow">First slide label</h5>
                 <p className="animate__animated animate__fadeInDown animate__slow" >Some representative placeholder content for the first slide.</p>
-                <p className="animate__animated animate__fadeInDown animate__slow" ><a className="#"> Know More</a></p>
+                <p className="animate__animated animate__fadeInDown animate__slow" ><a> Know More</a></p>
             </div>
           </div>
           <div className="carousel-item">
@@ -98,7 +98,7 @@ const Home = () => {
             <div className="carousel-caption d-none d-md-block">
                 <h5 className="animate__animated animate__fadeInDown animate__slow">First slide label</h5>
                 <p className="animate__animated animate__fadeInDown animate__slow" >Some representative placeholder content for the first slide.</p>
-                <p className="animate__animated animate__fadeInDown animate__slow" ><a className="#"> Know More</a></p>
+                <p className="animate__animated animate__fadeInDown animate__slow" ><a> Know More</a></p>
             </div>
           </div> */}
         </div>

@@ -2,7 +2,6 @@ import "./App.css";
 import "./Assets/Sass/style.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import ProductCard from "./Components/productCard";
 import FlexiblePipeSystem from "./Pages/FlexiblePipeSystem";
 import FlexiblePipeSystemDetail from "./Pages/FlexiblePipeSystemDetail";
 

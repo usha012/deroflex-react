@@ -57,8 +57,7 @@ function Header() {
                                     <ul className="sub-menu product_sub_menu commn_sub_menu_height px-2 pb-3">                                    
                                         <div className="container">
                                             <div className="micro_menu row mx-0 d-flex">
-
-                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="flexiblePipeSystem" onClick={e => redirect(e, "flexiblePipeSystem")}>
+                                                <div className="micro_menu_li w-auto headerCustomMenu" onClick={e => redirect(e, "flexiblePipeSystem")}>
                                                     <li className="clickme micro_menu_li_head" onClick={e => redirect(e, "flexiblePipeSystem")}>
                                                         <span className="inner_item">Flexible Pipe System</span>
                                                     </li>
@@ -85,7 +84,7 @@ function Header() {
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="vibrationIsolation" onClick={e => redirect(e, "vibrationIsolation")}>
+                                                <div className="micro_menu_li w-auto headerCustomMenu" onClick={e => redirect(e, "vibrationIsolation")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "vibrationIsolation")}>
                                                         <span className="">Vibration Isolation</span>
                                                     </li>                                        
@@ -106,7 +105,7 @@ function Header() {
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li  w-auto headerCustomMenu" productType="mechanicalSeal" onClick={e => redirect(e, "mechanicalSeal")}>
+                                                <div className="micro_menu_li  w-auto headerCustomMenu" onClick={e => redirect(e, "mechanicalSeal")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "mechanicalSeal")}>
                                                         <span className="">Mechanical seal</span>
                                                     </li>                                        
@@ -139,7 +138,7 @@ function Header() {
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li  w-auto headerCustomMenu" productType="flexibleHose" onClick={e => redirect(e, "flexibleHose")}>
+                                                <div className="micro_menu_li  w-auto headerCustomMenu" onClick={e => redirect(e, "flexibleHose")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "flexibleHose")}>
                                                         <span className="">Flexible Hose </span>
                                                     </li>
@@ -157,7 +156,7 @@ function Header() {
                                                     </li>
                                                 </div>
 
-                                                <div className="micro_menu_li w-auto headerCustomMenu" productType="customized" onClick={e => redirect(e, "customized")}>
+                                                <div className="micro_menu_li w-auto headerCustomMenu" onClick={e => redirect(e, "customized")}>
                                                     <li className="micro_menu_li_head" onClick={e => redirect(e, "customized")}>
                                                         <span className="">Customized</span>
                                                     </li>                                        

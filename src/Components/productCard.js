@@ -1,7 +1,4 @@
 import React from 'react'
-import RubberBellowP1_1 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Rubber_Expansion_Bellow/Singel_Arch_Expansion_Bellow/p1.jpg"
-import RubberBellowP1_2 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Rubber_Expansion_Bellow/Singel_Arch_Expansion_Bellow/p2.png"
-import RubberBellowP1_3 from "../Assets/Images/upgrade_products/Flexible_pipe_System/Rubber_Expansion_Bellow/Singel_Arch_Expansion_Bellow/p3.jpeg"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,8 +18,8 @@ const ProductCard = ({card, setModal}) => {
     }
 
   return (
-    <div class="grid-item px-0 product_card_outer">
-        <div class="card text-center h-100">
+    <div className="grid-item px-0 product_card_outer">
+        <div className="card text-center h-100">
             <Slider className="" style={{height: "190px", width: "250px"}} {...productItemOwlCarouselSetting}>
                 {
                     card?.images?.map(img => (
@@ -32,27 +29,27 @@ const ProductCard = ({card, setModal}) => {
                     ))
                 }
             </Slider>
-            <div class="card-body" style={{width: "250px"}}>
-                <h5 class="card-title">{card?.title}</h5>
-                <p class="card-text fs_12">{card?.description}</p>
+            <div className="card-body h-100 d-flex flex-column" style={{width: "250px"}}>
+                <h5 className="card-title">{card?.title}</h5>
+                <p className="card-text fs_12" style={{flex: 1}}>{card?.description}</p>
                 {
                     card?.buy
                     ?
-                    <span class=""><span class=" buy_btn btn btn-commn-bg-primary w-100 mb-3">Buy Now</span></span>
+                    <span className=""><span className=" buy_btn btn btn-commn-bg-primary w-100 mb-3">Buy Now</span></span>
                     :
                     ""
                 }
                 {
                     card?.redirect
                     ?
-                    <Link to={card?.redirectLink} class="btn btn-commn-bg-primary w-100">View More</Link>
+                    <Link to={card?.redirectLink} className="btn btn-commn-bg-primary w-100">View More</Link>
                     :
                     ""
                 }
                 {
                     card?.modal
                     ?
-                    <span class="btn btn-commn-bg-primary w-100" onClick={() => setModal({data: card, show: true})}>Quick View</span>
+                    <span className="btn btn-commn-bg-primary w-100" onClick={() => setModal({data: card, show: true})}>Quick View</span>
                     :
                     ""
                 }

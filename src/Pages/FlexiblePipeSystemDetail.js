@@ -136,24 +136,24 @@ const FlexiblePipeSystemDetail = () => {
                     <div className="modal-content br_6">
                         <div className="modal-body pb-6 pt-6 text-left position-relative">
                             <button type="button" className="btn-close position-absolute" onClick={() => setModal()} style={{right: "2rem", top: "1rem"}}></button>
-                            <div class="row">
-                                <div class="col-lg-auto col-sm-auto">
-                                    <div class="pro_200">
+                            <div className="row">
+                                <div className="col-lg-auto col-sm-auto">
+                                    <div className="pro_200">
                                         <img src={img} alt= {productRouteCapitalizeEachLetter(product)} />
                                     </div>
                                 </div>
-                                <div class="col-lg-8 col-sm-8">
+                                <div className="col-lg-8 col-sm-8">
                                     <h3>{modal?.data?.description} Deroflex Single Arch Expansion Joint(Rotating)</h3>
-                                    <p class="mb-2 fs_12">
+                                    <p className="mb-2 fs_12">
                                         {modal?.data?.description} Single Arch Expansion Joint Both Side Flange - for pipe expansion, misalignment and vibration.
                                     </p>
-                                    <ul class="fs_14">
-                                        <li class="list_inside">Deign :- Rotating </li>
-                                        <li class="list_inside">Standard Length :- 130 MM , 150 MM </li>
-                                        <li class="list_inside">Pressure :- 2 -25kg</li>
-                                        <li class="list_inside">Application :- Water , oil </li>
-                                        <li class="list_inside">Flange Materials – Mild Steel , Stainless steel </li>
-                                        <li class="list_inside">Materials :- EPDM , Synthetic ,Food Grade </li>
+                                    <ul className="fs_14">
+                                        <li className="list_inside">Deign :- Rotating </li>
+                                        <li className="list_inside">Standard Length :- 130 MM , 150 MM </li>
+                                        <li className="list_inside">Pressure :- 2 -25kg</li>
+                                        <li className="list_inside">Application :- Water , oil </li>
+                                        <li className="list_inside">Flange Materials – Mild Steel , Stainless steel </li>
+                                        <li className="list_inside">Materials :- EPDM , Synthetic ,Food Grade </li>
                                     </ul>
             
                                 </div>
