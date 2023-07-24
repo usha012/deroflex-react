@@ -20,8 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "concurrently \"react-scripts start\" \"npm run watch-css\" ",
+    "build": "concurrently \"react-scripts build\" \"npm run watch-css\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-css": "node-sass --include-path scss src/style.scss src/styles.css",

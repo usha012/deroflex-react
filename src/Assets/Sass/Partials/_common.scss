@@ -57,6 +57,14 @@
         // }
     }
 }
+// right_Arrow
+.li_marker_arrow_r::before{
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f105";
+    position: absolute;
+    left: 0rem;
+}
 // service
 .service_main_section{
     // background-image: url(/images/bg/bg4.png);
@@ -94,7 +102,7 @@
 
 // product_top_heder
 
-// profile_images_size
+// images_sizes
 .pro_50{
     width:100px;
     // height:100px;
@@ -130,6 +138,17 @@
 .pro_400{
     width:400px;
     // height:100px;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// images_sizes_percentage
+.pro_100_P{
+    width:100%;
     aspect-ratio: 4/3;
     object-fit: contain;
     img{
@@ -197,6 +216,8 @@
     border: 2px solid $bg-primary;
     width: fit-content;
     padding: 1px 17px;
+    position:absolute;
+    bottom: 0rem;
 }
 // product category
 .product_grid_container{
@@ -266,3 +287,9 @@
             }
         
     }
+//Accordian button
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: transparent;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+} 
