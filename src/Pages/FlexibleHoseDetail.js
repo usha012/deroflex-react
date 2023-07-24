@@ -1,5 +1,7 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+import { Table } from 'react-bootstrap';
+
 import BannerImage from "../Assets/Images/upgrade_products/Flexible_Hose/product_view_bg.jpg"
 import PageImage from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg"
 
@@ -10,8 +12,9 @@ import FlangeBellowWelded1 from "../Assets/Images/upgrade_products/Flexible_Hose
 import FlangeBellowWelded2 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Flange_With_Bellow_Welded/p2.jpg"
 import ProductCard from '../Components/productCard'
 import Footer from '../Components/footer'
-import Header from '../Components/header'
-import { Table } from 'react-bootstrap';
+import Header from '../Components/header';
+import Dummy2 from '../Assets/Images/dummyImage/dummy2.jpg'
+
 
 const FlexibleHoseDetail = () => {
 
@@ -129,7 +132,7 @@ const FlexibleHoseDetail = () => {
                 </div>
 
                 {/* Table content */}
-                <div className='container'>
+                <div className='container mb-5'>
                     <div className='row'>
                         <div className="col-12">
                             <Table bordered hover className='table-fixed'>
@@ -154,21 +157,25 @@ const FlexibleHoseDetail = () => {
                 </div>
 
                 {/* <!-- Industries and application areas --> */}
-                <div className='container bg_gray_200 p-5 mb-5'>
+                <div className='container  p-5 mb-5'>
                     <div className='row'>
                         <div className='col-12'>
-                            <h3 class="heading2-commn f-w600 ">{data?.industrialAreas?.title}</h3>
+                            <h2 class="heading2-commn f-w600 ">{data?.industrialAreas?.title}</h2>
                         </div>
                         <div className="col-12">
-                            <p>{data?.industrialAreas?.description}</p>
+                            <p className='fs_18 '>{data?.industrialAreas?.description}</p>
                         </div>
-                        <div className='col-12'>
-                            <ul className='position-relative'>
+                        <div className='col-6'>
+                            <ul className='position-relative py-5'>
                                 {
-                                    data?.industrialAreas?.points?.map(el => <li className='li_marker_arrow_r ps-4 mb-2'>{el}</li>)
+                                    data?.industrialAreas?.points?.map(el => <li className='li_marker_arrow_r ps-4 mb-4 fs_25'>{el}</li>)
                                 }
                                 
                             </ul>
+
+                        </div>
+                        <div className='col-6'>
+                            <img src={Dummy2}/>
 
                         </div>
                     </div>
