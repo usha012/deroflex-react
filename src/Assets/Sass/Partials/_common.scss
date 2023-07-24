@@ -293,11 +293,17 @@
 //     background-color: transparent;
 //     box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
 // } 
+
+.accordian-item {
+    border: none;
+}
+
 .accordion_header{
+
     .accordion-button{
         font-size: 2rem;
         background-color: $bg-gray-200;
-
+        border: 1px solid #e5e5e5;
     }
     .accordion-button:not(.collapsed) {
         color: $text-secondary;
