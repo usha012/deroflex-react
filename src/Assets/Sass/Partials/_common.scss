@@ -288,8 +288,26 @@
         
     }
 //Accordian button
-.accordion-button:not(.collapsed) {
-    color: #0c63e4;
-    background-color: transparent;
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-} 
+// .accordion-button:not(.collapsed) {
+//     color: #0c63e4;
+//     background-color: transparent;
+//     box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+// } 
+.accordion_header{
+    .accordion-button{
+        font-size: 1.5rem;
+        background-color: $bg-gray-200;
+
+    }
+    .accordion-button:not(.collapsed) {
+        color: $text-secondary;
+        background-color: transparent;
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    }
+    .accordion-button:focus {
+        z-index: 3;
+        border-color:transparent;
+        outline: 0;
+        box-shadow: 0 0 0 0;
+    }
+}

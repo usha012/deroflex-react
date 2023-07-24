@@ -107,34 +107,29 @@ const FlexibleHoseDetail = () => {
                     </div>
 
                 </div>
-
+ 
                 {/*  Question and answer accordion */}
-                <div className='container'>
+                <div className='container mb-5'>
                     <div className='row'>
                         <div className='col-12'>
                             <Accordion defaultActiveKey="0">
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header>Accordion Item #1</Accordion.Header>
-                                    <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.
+                                    <Accordion.Header className='accordion_header fs_28 bg_gray_200'>Why Select a Flexible Metal Hose </Accordion.Header>
+                                    <Accordion.Body className='bg_gray_200 fs_14'>
+                                    Flexibility is one of the top reasons to choose a metal hose for a piping system. Compared to rigid conventional pipes, flexible metal hoses are simple to route. They can absorb vibrations, dampen noise, withstand thermal expansion & contraction and are resistant to abrasion, permeation and penetration. Flexible hoses can also withstand extreme temperatures and are naturally resistant to fire.
+                                    Corrugated metal hoses have excellent hoop strength, which ensures that they can effectively handle full vacuum without any damage. The best part, flexible hoses are compatible with a broad range of chemicals, which is why they are best suited for a range of applications.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
-                                    <Accordion.Header>Accordion Item #2</Accordion.Header>
-                                    <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.
+                                    <Accordion.Header className='accordion_header fs_28 bg_gray_200'>What is a flexible stainless steel hose used for?</Accordion.Header>
+                                    <Accordion.Body className='bg_gray_200 fs_14'>
+                                    A flexible stainless steel hose is used to transfer/transport fluid, gases, steam and fluidized solids from one location to another. It can be used for varied applications such as pharmaceuticals industries, pneumatic services, railways, ports & shipyards, refineries, among others.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header className='accordion_header fs_28 bg_gray_200'>How long does a flexible stainless steel hose last?</Accordion.Header>
+                                    <Accordion.Body className='bg_gray_200 fs_14'>
+                                    All high-quality corrugated stainless steel hoses have long longevity. They are manufactured to last throughout the lifespan of a mechanical system.
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>
