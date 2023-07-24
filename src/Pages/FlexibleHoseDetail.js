@@ -11,6 +11,7 @@ import FlangeBellowWelded2 from "../Assets/Images/upgrade_products/Flexible_Hose
 import ProductCard from '../Components/productCard'
 import Footer from '../Components/footer'
 import Header from '../Components/header'
+import { Table } from 'react-bootstrap';
 
 const FlexibleHoseDetail = () => {
 
@@ -45,7 +46,27 @@ const FlexibleHoseDetail = () => {
                 redirect: true,
                 redirectLink: "https://www.google.com"
             },
-        ]
+        ],
+        tableData: [
+            {title: "Hose Materials", description: "SS 304/304L SS 316/316L SS 321"},
+            {title: "Braid Materials", description: "SS 304/304L SS 316/316L"},
+            {title: "Braid Type", description: "Single Wire Braid Double Wire Braid Triple Wire Braid "},
+            {title: "Hose Size", description: `DN6 (1/4" NB) to DN 300 (12" NB)`},
+            {title: "Hose Length", description: "Customized Upto 20 MTRs "},
+            {title: "End Fittings", description: "Flanges Adaptor. Nut Nipple Pipes Reducer"},
+            {title: "End Fitting Materials", description: "Carbon Steel Stainless Steel. Nickel Alloys Mild Steel Copper "},
+            {title: "Working Pressure   ", description: "High/ Medium /Low"},
+        ],
+        industrialAreas: {
+            title: "Industries and Application Areas ",
+            description: "As one of the leading stainless steel corrugated hose manufacturers, our wide range of hoses are available in several grades of stainless steel and comes with different flexible hose assemblies. These can be used for a variety of industries and application including",
+            points: [
+                "Refineries, steel plant, paper plant, fertilizer and pharmaceuticals industries.",
+                "Lubrication system, Steam, hot water, pneumatic services; and Vacuum system.",
+                "Railways, ports & shipyards, cryogenic service, air-conditioning & refrigeration.",
+                "Absorption, piping, boilers and vibration."
+            ]
+        }
     }
 
     return (
@@ -105,7 +126,52 @@ const FlexibleHoseDetail = () => {
 
                         </div>
                     </div>
+                </div>
 
+                {/* Table content */}
+                <div className='container'>
+                    <div className='row'>
+                        <div className="col-12">
+                            <Table bordered hover className='table-fixed'>
+                                <thead>
+                                    <tr>
+                                        <th className="text-center" colSpan={2}>Stainless Steel Corrugated Flexible Hose Pipes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        data?.tableData?.map(el => (
+                                            <tr>
+                                                <td>{el?.title}</td>
+                                                <td>{el?.description}</td>
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
+                            </Table>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <!-- Industries and application areas --> */}
+                <div className='container bg_gray_200 p-5 mb-5'>
+                    <div className='row'>
+                        <div className='col-12'>
+                            <h3 class="heading2-commn f-w600 ">{data?.industrialAreas?.title}</h3>
+                        </div>
+                        <div className="col-12">
+                            <p>{data?.industrialAreas?.description}</p>
+                        </div>
+                        <div className='col-12'>
+                            <ul className='position-relative'>
+                                {
+                                    data?.industrialAreas?.points?.map(el => <li className='li_marker_arrow_r ps-4 mb-2'>{el}</li>)
+                                }
+                                
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
  
                 {/*  Question and answer accordion */}
