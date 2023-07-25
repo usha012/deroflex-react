@@ -62,7 +62,7 @@ const FlexibleHoseDetail = () => {
         ],
         industrialAreas: {
             title: "Industries and Application Areas ",
-            description: "As one of the leading stainless steel corrugated hose manufacturers, our wide range of hoses are available in several grades of stainless steel and comes with different flexible hose assemblies. These can be used for a variety of industries and application including",
+            description: "As one of the leading stainless steel corrugated hose manufacturers, our wide range of hoses are available in several grades of stainless steel and comes with different flexible hose assemblies. These can be used for a variety of industries and application including.",
             points: [
                 "Refineries, steel plant, paper plant, fertilizer and pharmaceuticals industries.",
                 "Lubrication system, Steam, hot water, pneumatic services; and Vacuum system.",
@@ -124,7 +124,6 @@ const FlexibleHoseDetail = () => {
                                 <li className='li_marker_arrow_r ps-4 mb-2'> These hoses are a flexible and quick option for rigid piping in difficult locations. They have a longer life and come with excellent corrosion characteristics.</li>
                                 <li className='li_marker_arrow_r ps-4 mb-2'> They are resistant to abrasion, penetration and damage. They also suppress rigid pipe noise transmission while operating under vacuum and high pressures.</li>
                                 <li className='li_marker_arrow_r ps-4 mb-2'> Plus, these stainless steel corrugated flexible hoses help adjust/correct misaligned rigid piping and absorb/dampens vibration.</li>
-                                <li className='li_marker_arrow_r ps-4 mb-2'>Stainless Steel Corrugated Flexible Hose Pipe Production and Supply   Range </li>
                             </ul>
 
                         </div>
