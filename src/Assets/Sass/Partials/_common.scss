@@ -295,15 +295,27 @@
 // } 
 
 .accordian-item {
-    border: none;
+    border: none !important;
+    // position: relative;
+}
+.accordion-item:not(:first-of-type) {
+    border-top: 1px solid rgba(0,0,0,.125);
 }
 
+// .accordion_header::after{
+//     font-family: "FontAwesome";
+//     font-weight: 400;
+//     content: "\f105";
+//     position: absolute;
+//     right: 0rem;
+
+// }
 .accordion_header{
 
     .accordion-button{
         font-size: 2rem;
         background-color: $bg-gray-200;
-        border: 1px solid #e5e5e5;
+        // border: 1px solid #e5e5e5;
     }
     .accordion-button:not(.collapsed) {
         color: $text-secondary;
@@ -316,4 +328,30 @@
         outline: 0;
         box-shadow: 0 0 0 0;
     }
+    .accordion-button::after{
+        background-image: none;
+        font-family: "FontAwesome";
+        font-weight: 400;
+        font-size: 1rem;
+        content: "\f067";
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
+        padding: 1rem 2rem;
+        background-color: #15133c;
+        color: #ffff;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .accordion-button:not(.collapsed)::after {
+        transform:none;
+        font-family: "FontAwesome";
+        font-weight: 400;
+        content: "\f068";
+        font-size: 1rem;
+    }
+    
 }

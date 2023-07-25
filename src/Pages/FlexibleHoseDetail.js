@@ -187,7 +187,7 @@ const FlexibleHoseDetail = () => {
                         <div className='col-12'>
                             <Accordion defaultActiveKey="0">
                                 <Accordion.Item eventKey="0" className="mb-4">
-                                    <Accordion.Header className='accordion_header fs_28 bg_gray_200'>Why Select a Flexible Metal Hose </Accordion.Header>
+                                    <Accordion.Header className='accordion_header fs_28 bg_gray_200 accor_btn'>Why Select a Flexible Metal Hose </Accordion.Header>
                                     <Accordion.Body className='bg_gray_200 fs_16'>
                                     Flexibility is one of the top reasons to choose a metal hose for a piping system. Compared to rigid conventional pipes, flexible metal hoses are simple to route. They can absorb vibrations, dampen noise, withstand thermal expansion & contraction and are resistant to abrasion, permeation and penetration. Flexible hoses can also withstand extreme temperatures and are naturally resistant to fire.
                                     Corrugated metal hoses have excellent hoop strength, which ensures that they can effectively handle full vacuum without any damage. The best part, flexible hoses are compatible with a broad range of chemicals, which is why they are best suited for a range of applications.
