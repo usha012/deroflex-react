@@ -14,7 +14,7 @@
 }
 
 // seprator_right
-.small_text{
+.small_text_primary{
     font-family: 'Teko', sans-serif;
     font-size: 34px;
     line-height: 34px;
@@ -302,14 +302,6 @@
     border-top: 1px solid rgba(0,0,0,.125);
 }
 
-// .accordion_header::after{
-//     font-family: "FontAwesome";
-//     font-weight: 400;
-//     content: "\f105";
-//     position: absolute;
-//     right: 0rem;
-
-// }
 .accordion_header{
 
     .accordion-button{

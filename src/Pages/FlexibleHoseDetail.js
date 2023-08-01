@@ -26,28 +26,28 @@ const FlexibleHoseDetail = () => {
         pageDescription: "Deroflex  offers corrugated flexible stainless steel hoses from 6mm (1/4’) to up to 300 mm (12’). Apart from the standard pitch, the other two types of Deroflex  corrugated stainless steel hoses available are; open-pitch and close-pitch. Here, in an ‘open-pitch’ corrugated hose flexible hoses in SS AISI 304, 321, 316 & 316-L ,  Deroflex regularly manufactures hoses for highly critical application, the corrugations are more widely spaced, while in a ‘closed-pitch’ corrugated hose, the corrugations are more closely spaced. Stainless steel corrugated flexible hoses manufactured by Deroflex are widely used in fertilizer industries refineries petrochemicals plants chemical and pharmaceuticals plants Stainless steel flexible metal braided hoses and fittings can be used widely in systems like water steam hot oil and gas with their resistance to pressure and flexible structure",
         products: [
             {
-                id: "Stainless_Steel_Hose",
+                id: "stainless-steel-hose",
                 title: "House With Custom Nut Fitting",
                 description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                 images: [StainlessSteelHose1, StainlessSteelHose2],
                 redirect: true,
-                redirectLink: "https://www.google.com"
+                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/stainless-steel-hose"
             },
             {
-                id: "Flange_With_Bellow_Welded",
+                id: "flange-with-bellow-welded",
                 title: "Flange With Bellow Welded",
                 description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                 images: [FlangeBellowWelded1, FlangeBellowWelded2],
                 redirect: true,
-                redirectLink: "https://www.google.com"
+                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/flange-with-bellow-welded"
             },
             {
-                id: "Flange_With_Bellow_Welded",
-                title: "Stainless Steel Fllexible Exhaust Pipe",
+                id: "stainless-steel-flexible-exhaust-pipe",
+                title: "Stainless Steel Flexible Exhaust Pipe",
                 description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                 images: [FlangeBellowWelded1, FlangeBellowWelded2],
                 redirect: true,
-                redirectLink: "https://www.google.com"
+                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/stainless-steel-flexible-exhaust-pipe"
             },
         ],
         tableData: [

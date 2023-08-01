@@ -697,9 +697,9 @@ const FlexiblePipeSystem = () => {
 									{
 										modal?.showMore
 										?
-										<p id="showLessButton" className="showLessButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: false})}>Show less</p>
+										<p id="showLessButton" className="showLessButton small_text_primary cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: false})}>Show less</p>
 										:
-										<p id="showMoreButton" className="showMoreButton small_text cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: true})}>Show more</p>
+										<p id="showMoreButton" className="showMoreButton small_text_primary cursor_pointer fs_18" onClick={() => setModal({...modal, showMore: true})}>Show more</p>
 									}
 								</div>
 								:
