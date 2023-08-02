@@ -1,49 +1,35 @@
-import React from 'react';
+import React from 'react'
 import { Table } from 'react-bootstrap';
 
-import BannerImage from "../Assets/Images/upgrade_products/Flexible_Hose/product_view_bg.jpg";
-import DisplayImage from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/d2.jpg";
-import HouseNutFitting_1 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p1.jpg"
-import HouseNutFitting_2 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p2.jpg"
-import HouseNutFitting_3 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p3.jpg"
-import HouseNutFitting_4 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p4.jpg";
+import BannerImage from "../../../Assets/Images/upgrade_products/Flexible_Hose/product_view_bg.jpg";
+import HouseNutFitting_1 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p1.jpg"
+import HouseNutFitting_2 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p2.jpg"
+import HouseNutFitting_3 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p3.jpg"
+import HouseNutFitting_4 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p4.jpg";
 
 
-import icon1 from "../Assets/Images/icon/icon1.png"
-import icon2 from "../Assets/Images/icon/icon2.png"
-import icon3 from "../Assets/Images/icon/icon3.png"
-import icon4 from "../Assets/Images/icon/icon4.png"
-import icon5 from "../Assets/Images/icon/icon5.png"
-import icon6 from "../Assets/Images/icon/icon6.png"
-import icon7 from "../Assets/Images/icon/icon7.png"
-import icon8 from "../Assets/Images/icon/icon8.png"
-import icon9 from "../Assets/Images/icon/icon9.png"
-import icon10 from "../Assets/Images/icon/icon10.png"
+import icon1 from "../../../Assets/Images/icon/icon1.png"
+import icon2 from "../../../Assets/Images/icon/icon2.png"
+import icon3 from "../../../Assets/Images/icon/icon3.png"
+import icon4 from "../../../Assets/Images/icon/icon4.png"
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import OwlCarousel from 'react-owl-carousel';
-const HouseNutFitting = () => {
 
+const HoseCoupleFitting = () => {
     const industryServices = [
         { id: "01", name: "Mechanical Engineering", icon: icon1, HouseNutFitting: HouseNutFitting_1 },
         { id: "02", name: "Mechanical Engineering", icon: icon2, HouseNutFitting: HouseNutFitting_2 },
         { id: "03", name: "Mechanical Engineering", icon: icon3, HouseNutFitting: HouseNutFitting_3 },
         { id: "04", name: "Mechanical Engineering", icon: icon4, HouseNutFitting: HouseNutFitting_4 },
-        // { id: "05", name: "Mechanical Engineering", icon: icon5 },
-        // { id: "06", name: "Mechanical Engineering", icon: icon6 },
-        // { id: "07", name: "Mechanical Engineering", icon: icon7 },
-        // { id: "08", name: "Mechanical Engineering", icon: icon8 },
-        // { id: "09", name: "Mechanical Engineering", icon: icon9 },
-        // { id: "10", name: "Mechanical Engineering", icon: icon10 },
-
     ]
 
     const data = {
         pageBannerImage: BannerImage,
         pageImage: HouseNutFitting_4,
         pageTitle: "Lorem Ipsum",
-        pageDescription: "Deroflex offer female thread stainless steel flexible hose pipe assembly comprises of the hose and the end fittings, and are determined by the application in which the hose assembly is going to be placed. SS flexible braided hose is mainly composed of flexible body (corrugated pipe), braided reinforced mesh cover and carbon steel material swivel nut ends in different forms. the inner metal hose is spiral or annular shape thin wall stainless steel bellows, outer mesh is weaved by stainless steel wire or steel belt by certain specification. the corrugated metal hose is made by longitudinal seam stainless steel thin wall hose, using high precision plasticity deformation technology, the elastic characteristic of bellows outline decides hose’s flexibility and fatigue resistance. flexible braided hose can easily absorb all kinds of movement transformation and cyclic loading, especially satisfying compensation for larger displacement, plays an important role on thermal expansion absorption, vibration adsorption of pipeline systems.",
+        pageDescription: "Deroflex  is a manufacturer and professional supplier of Flexible Hose Pipes with Camlock Coupling as end connections We can offer SS Flexible hoses with Camlock Coupling in a variety of configurations with stainless steel 304 or stainless steel 316 wire braiding.",
         pageimageDescription: "A swivel nut connect ss flexible braided hose assembly comprises of the hose and the end fittings, and are determined by the application in which the hose assembly is going to be placed. Compared to rubber and other materials which are used for hose pipes, ss flexible braided hose assemblies are an excellent choice for a variety of industrial usage and are suitable for the most demanding technical specification.",
         tableData: [
             { title: "Pipe material", description: "SS304, SS316L, SS321" },
@@ -104,35 +90,6 @@ const HouseNutFitting = () => {
 
             </div>
             {/* Table content */}
-            {/* <div className='container mb-5'>
-                <div className='row justify-content-center'>
-                    <div className="col-8">
-                        <Table bordered hover className='table-fixed'>
-                            <thead>
-                                <tr>
-                                    <th className="text-center" colSpan={2}>Stainless steel flexible hose pipe specifications</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    data?.tableData?.map(el => (
-                                        <tr>
-                                            <td>{el?.title}</td>
-                                            <td>{el?.description}</td>
-                                        </tr>
-                                    ))
-                                }
-                            </tbody>
-                        </Table>
-                    </div>
-                    <div className='col-4'>
-                        <div className='image_size'>
-                            <img src={DisplayImage} />
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
             {/* <!-- Start Services --> */}
             <section className="service_main_section p-tp80 p-btm80">
                 <div className="service_bgcolor">
@@ -207,4 +164,4 @@ const HouseNutFitting = () => {
     )
 }
 
-export default HouseNutFitting
+export default HoseCoupleFitting

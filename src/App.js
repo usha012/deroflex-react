@@ -7,10 +7,13 @@ import FlexiblePipeSystemDetail from "./Pages/FlexiblePipeSystemDetail";
 
 import VibrationIsolation from "./Pages/VibrationIsolation"
 import FlexibleHose from "./Pages/FlexibleHose";
-import FlexibleHoseDetail from "./Pages/FlexibleHoseDetail";
+import FlexibleHoseDetail from "./Pages/FlexibleHose/FlexibleHoseDetail";
 import Customized from "./Pages/Customized";
 import MechanicalSeal from "./Pages/MechanicalSeal";
-import HouseNutFitting from "./Pages/HouseNutFitting";
+import HouseNutFitting from "./Pages/FlexibleHose/StainlessSteelHose/HouseNutFitting";
+import FlangeBellowWelded from "./Pages/FlexibleHose/StainlessSteelHose/FlangeBellowWelded";
+import StainlessSteelFlexibleExhaustPipe from "./Pages/FlexibleHose/StainlessSteelHose/StainlessSteelFlexibleExhaustPipe";
+import HoseCoupleFitting from "./Pages/FlexibleHose/StainlessSteelHose/HoseCoupleFitting";
 
 function App() {
 	return (
@@ -27,7 +30,10 @@ function App() {
 					
 					<Route path="/new-products/flexible-hose" element={<FlexibleHose />} />
 					<Route path="/new-products/flexible-hose/:product" element={<FlexibleHoseDetail />} />
-					<Route path="/new-products/flexible-hose/:product/:productDetail" element={<HouseNutFitting/>} />
+					<Route path="/new-products/flexible-hose/:product/hose-nut-fitting" element={<HouseNutFitting/>} />
+					<Route path="/new-products/flexible-hose/:product/flange-with-bellow-welded" element={<FlangeBellowWelded/>} />
+					<Route path="/new-products/flexible-hose/:product/stainless-steel-flexible-exhaust-pipe" element={<StainlessSteelFlexibleExhaustPipe/>} />
+					<Route path="/new-products/flexible-hose/:product/hose-coupling-fitting" element={<HoseCoupleFitting/>} />
 					
 					<Route path="/new-products/customized" element={<Customized />} />
 					

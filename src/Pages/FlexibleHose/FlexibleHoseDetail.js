@@ -2,18 +2,29 @@ import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 import { Table } from 'react-bootstrap';
 
-import BannerImage from "../Assets/Images/upgrade_products/Flexible_Hose/product_view_bg.jpg"
-import PageImage from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg"
+import BannerImage from "../../Assets/Images/upgrade_products/Flexible_Hose/product_view_bg.jpg"
+import PageImage from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg"
 
-import StainlessSteelHose1 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg"
-import StainlessSteelHose2 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p2.jpeg"
+import StainlessSteelHose1 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p1.jpg"
+import StainlessSteelHose2 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Hose/p2.jpeg"
 
-import FlangeBellowWelded1 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Flange_With_Bellow_Welded/p1.jpg"
-import FlangeBellowWelded2 from "../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Flange_With_Bellow_Welded/p2.jpg"
-import ProductCard from '../Components/productCard'
-import Footer from '../Components/footer'
-import Header from '../Components/header';
-import Dummy2 from '../Assets/Images/dummyImage/dummy2.jpg'
+import StainlesExhaustPipe1 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Flexible_Exhaust_Pipe/p1.jpg"
+import StainlesExhaustPipe2 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Stainless_Steel_Flexible_Exhaust_Pipe/p2.jpg"
+
+
+import FlangeBellowWelded1 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Flange_With_Bellow_Welded/p1.jpg"
+import FlangeBellowWelded2 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/Flange_With_Bellow_Welded/p2.jpg"
+
+import HoseCouplingFitting1 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/house_with_couple_fitting/p1.jpg"
+import HoseCouplingFitting2 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/house_with_couple_fitting/p2.jpg"
+
+import HoseNutFitting1 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p1.jpg"
+import HoseNutFitting2 from "../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p2.jpg"
+
+import ProductCard from '../../Components/productCard'
+import Footer from '../../Components/footer'
+import Header from '../../Components/header';
+import Dummy2 from '../../Assets/Images/dummyImage/dummy2.jpg'
 
 
 const FlexibleHoseDetail = () => {
@@ -26,12 +37,12 @@ const FlexibleHoseDetail = () => {
         pageDescription: "Deroflex  offers corrugated flexible stainless steel hoses from 6mm (1/4’) to up to 300 mm (12’). Apart from the standard pitch, the other two types of Deroflex  corrugated stainless steel hoses available are; open-pitch and close-pitch. Here, in an ‘open-pitch’ corrugated hose flexible hoses in SS AISI 304, 321, 316 & 316-L ,  Deroflex regularly manufactures hoses for highly critical application, the corrugations are more widely spaced, while in a ‘closed-pitch’ corrugated hose, the corrugations are more closely spaced. Stainless steel corrugated flexible hoses manufactured by Deroflex are widely used in fertilizer industries refineries petrochemicals plants chemical and pharmaceuticals plants Stainless steel flexible metal braided hoses and fittings can be used widely in systems like water steam hot oil and gas with their resistance to pressure and flexible structure",
         products: [
             {
-                id: "stainless-steel-hose",
+                id: "house-custom-nut-fitting",
                 title: "House With Custom Nut Fitting",
                 description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                images: [StainlessSteelHose1, StainlessSteelHose2],
+                images: [HoseNutFitting1, HoseNutFitting2],
                 redirect: true,
-                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/stainless-steel-hose"
+                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/hose-nut-fitting"
             },
             {
                 id: "flange-with-bellow-welded",
@@ -45,7 +56,15 @@ const FlexibleHoseDetail = () => {
                 id: "stainless-steel-flexible-exhaust-pipe",
                 title: "Stainless Steel Flexible Exhaust Pipe",
                 description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-                images: [FlangeBellowWelded1, FlangeBellowWelded2],
+                images: [StainlesExhaustPipe1, StainlesExhaustPipe2],
+                redirect: true,
+                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/stainless-steel-flexible-exhaust-pipe"
+            },
+            {
+                id: "hose-with-coupling-fitting",
+                title: "Hose With Coupling Fitting",
+                description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                images: [HoseCouplingFitting1, HoseCouplingFitting2],
                 redirect: true,
                 redirectLink: "/new-products/flexible-hose/flexible-hose-detail/stainless-steel-flexible-exhaust-pipe"
             },
@@ -211,7 +230,6 @@ const FlexibleHoseDetail = () => {
 
                 </div>
             </div>
-
             <Footer />
         </>
     )
