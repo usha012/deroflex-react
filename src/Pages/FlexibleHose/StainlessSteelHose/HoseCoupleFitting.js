@@ -6,6 +6,9 @@ import HouseNutFitting_1 from "../../../Assets/Images/upgrade_products/Flexible_
 import HouseNutFitting_2 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p2.jpg"
 import HouseNutFitting_3 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p3.jpg"
 import HouseNutFitting_4 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/hose_with_custom_nut_fitting/p4.jpg";
+import HoseCoupleFitting_1 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/house_with_couple_fitting/p1.jpg"
+
+import HoseCoupleFitting_2 from "../../../Assets/Images/upgrade_products/Flexible_Hose/Stainles_Steel_Hose/house_with_couple_fitting/p2.jpg";
 
 
 import icon1 from "../../../Assets/Images/icon/icon1.png"
@@ -16,6 +19,8 @@ import icon4 from "../../../Assets/Images/icon/icon4.png"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import OwlCarousel from 'react-owl-carousel';
+import Footer from '../../../Components/footer';
+import Header from '../../../Components/header';
 
 const HoseCoupleFitting = () => {
     const industryServices = [
@@ -27,10 +32,10 @@ const HoseCoupleFitting = () => {
 
     const data = {
         pageBannerImage: BannerImage,
-        pageImage: HouseNutFitting_4,
+        pageImage: HoseCoupleFitting_1,
         pageTitle: "Lorem Ipsum",
-        pageDescription: "Deroflex  is a manufacturer and professional supplier of Flexible Hose Pipes with Camlock Coupling as end connections We can offer SS Flexible hoses with Camlock Coupling in a variety of configurations with stainless steel 304 or stainless steel 316 wire braiding.",
-        pageimageDescription: "A swivel nut connect ss flexible braided hose assembly comprises of the hose and the end fittings, and are determined by the application in which the hose assembly is going to be placed. Compared to rubber and other materials which are used for hose pipes, ss flexible braided hose assemblies are an excellent choice for a variety of industrial usage and are suitable for the most demanding technical specification.",
+        pageDescription: "Deroflex  is a manufacturer and professional supplier of Flexible Hose Pipes with Camlock Coupling as end connections We can offer SS Flexible hoses with Camlock Coupling in a variety of configurations with stainless steel 304 or stainless steel 316 wire braiding.We are a specialist manufacturer of Flexible Metal Hoses, with Camlock Couplings Since our inception Deroflex has been a renowned name in manufacturing SS Flexible Hoses with Camlock Couplings for the most demanding applications Our stainless steel braided flexible hose with Camlock Couplings are used by customers in chemical oil and gas food processing pharmaceutical industries and power generation.",
+        pageimageDescription: "",
         tableData: [
             { title: "Pipe material", description: "SS304, SS316L, SS321" },
             { title: "Braided mesh material", description: "SS304 or SS316" },
@@ -45,122 +50,84 @@ const HoseCoupleFitting = () => {
         ],
     }
     return (
-        <div className="productview_wrapper">
-            <div className="row">
-                <img src={data?.pageBannerImage} className="mainBannerImg" />
-            </div>
-            <div className="container mb-3">
-                <div className="row pt-5">
-                    <div className="col-lg-4 mb-3">
-                        <div className="pro_100_P m-auto">
-                            <img src={data?.pageImage} id="pageImage" />
-                        </div>
-                    </div>
-                    <div className="col-lg-8 position-relative mb-3">
-                        <h3>{data?.pageTitleTitle}</h3>
-                        <p>{data?.pageDescription}</p>
-                        <div className="ask_ques_wrapper">
-                            <p className="mb-0 text-capitalize"><a>Ask a question about this product</a></p>
-                        </div>
-                    </div>
-                    <div className='col-lg-12'>
-                        <p>{data?.pageimageDescription}</p>
-                    </div>
+        <>
+            <Header />
+            <div className="productview_wrapper">
+                <div className="row">
+                    <img src={data?.pageBannerImage} className="mainBannerImg" />
                 </div>
-            </div>
-            {/* Application */}
-            <div className='container mb-4'>
-                <div className='row'>
-                    <div className='col-12'>
-                        <div className="small_text_outer">
-                            <div className="small_text_primary d-flex align-items-baseline">
-                                <div className="f-34 f-w400">Applications of the female thread stainless steel flexible hose pipe </div>
-                                <div className="sep-leaf-right-commn"></div>
+                <div className="container mb-5">
+                    <div className="row pt-5">
+                        <div className="col-lg-4 mb-3">
+                            <div className="pro_100_P m-auto">
+                                <img src={data?.pageImage} id="pageImage" />
                             </div>
                         </div>
-                        <ul>
-                            <li><span></span>Compensation for misalignment – Reduces stresses</li>
-                            <li>Controls vibration – Normal mechanical equipment vibrations are reduced at the connector</li>
-                            <li>Reduces noise – High pipe vibration noise is greatly reduced and often eliminated</li>
-                            <li>All metal construction available – Eliminates shelf life problems and allows operation at elevated temperatures</li>
-                            <li>Absorbs thermal growth motion – Excellent protection for adjacent piping and equipment.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            {/* Table content */}
-            {/* <!-- Start Services --> */}
-            <section className="service_main_section p-tp80 p-btm80">
-                <div className="service_bgcolor">
-
-                </div>
-                <div className="row mx-0">
-                    <div className="col-lg-6 z-1">
-                        <div className="service_inner mx-5 px-4">
-                            <Table bordered className='table-fixed text_white fs_15'>
-                                <thead>
-                                    <tr>
-                                        <th className="text-center" colSpan={2}>Stainless steel flexible hose pipe specifications</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {
-                                        data?.tableData?.map(el => (
-                                            <tr>
-                                                <td>{el?.title}</td>
-                                                <td>{el?.description}</td>
-                                            </tr>
-                                        ))
-                                    }
-                                </tbody>
-                            </Table>
+                        <div className="col-lg-8 position-relative mb-3">
+                            <h3>{data?.pageTitleTitle}</h3>
+                            <p>{data?.pageDescription}</p>
+                            <div className="ask_ques_wrapper">
+                                <p className="mb-0 text-capitalize"><a>Ask a question about this product</a></p>
+                            </div>
+                        </div>
+                        <div className='col-lg-12'>
+                            {/* <p>{data?.pageimageDescription}</p> */}
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="service_inner_two">
-                            <OwlCarousel className='owl-theme service_owl_carousel' loop autoplay={true} margin={10} nav={false} dots={false}>
-                                {
-                                    industryServices?.map(el => (
-                                        <div className="item" key={el?.id}>
-                                            <div className="card">
-                                                <div className="card-body">
-                                                    <div className="hrz_line d-flex mb-5">
-                                                        {/* <h5 className="card-title ms-3">{el?.name}</h5> */}
-                                                        <div className='pro_400'>
-                                                            <img src={el?.HouseNutFitting} />
-                                                        </div>
+                </div>
 
-                                                    </div>
-                                                    <div className="row d-flex mx-0 justify-content-between align-items-baseline">
-                                                        <div className="card_icon col-lg-6">
-                                                            <img src={el?.icon} />
-                                                        </div>
-                                                        <div className="card_count  col-lg-6">
-                                                            <p className="mb-0">{el?.id}</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))
-                                }
-                            </OwlCarousel>
+                {/* video section*/}
+                <div className='container mb-4'>
+                    <div className='row'>
+                        <div className='col-8'>
+                            {/* <div className="small_text_outer">
+                                <div className="small_text_primary d-flex align-items-baseline">
+                                    <div className="f-34 f-w400">Applications of the female thread stainless steel flexible hose pipe </div>
+                                    <div className="sep-leaf-right-commn"></div>
+                                </div>
+                            </div> */}
+                            <p>Deroflex  has in-house manufacturing for stainless steel flanges and stainless steel pipe fittings making it one of the fastest producer and supplier of flange end corrugated flexible hoses in Kolkata  India fexible Metal hoses are commonly known by many names such as stainless steel hose braided steel hose steel Laided lines and flexible metallic hoses</p>
+                            <p>Stainless Steel braided flexible hose pipes with Camlock Couplings are the general purpose product and can be used in applications involving high temperatures and working pressures Outside braiding of AISI 304 Stainless steel wire is used to give maximum pressure resistance and external protection to the hose assembly
+                            </p>
                         </div>
+                        <div className='col-4'>
+                            <div className='pro_400'>
+                                <img src={HoseCoupleFitting_2 } />
+                            </div>
+                        </div>
+                    </div>
 
-                    </div>
                 </div>
-            </section>
-            {/* <!-- End Services --> */}
-            {/* bottm keywords */}
-            <div className='container-fluid mx-5'>
-                <div className='row text-center'>
-                    <div className='col-12'>
-                        <p className='small_text_primary fs_29'>  Food industry, Chemical industry, Marine industry, Steel plant, Power generation, Heating and ventilation</p>
-                    </div>
-                </div>
+
+                {/*  */}
+                <section className='bg_gray_200'>
+                        <div className='container p-5 mb-5'>
+                            <div className='row'>
+                                <div className='col-12'>
+                                    <h3 class="heading2-commn f-w600 ">Key Features of Stainless Steel Flexible Hose Pipes with Camlock  Coupling</h3>
+                                    <p>Threaded to BSP BSPT NPT Standard Type A Type B Type C Type D Type E Camlock Coupling welded to Metal hose or crimped to PTFE flexible hose</p>
+                                </div>
+                                <div className='col-12'>
+                                    <ul className='position-relative'>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Stainless Steel 304 Stainless Steel 316 with Rubber gasket.</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Inside Corrugation: SS 304, SS 316, SS 321 Outside Braiding SS 304, SS 316.</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Layer: Single, Double or Triple Braiding.</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Sizes: 1/4" to 12" in lengths upto 20 MTRs.</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Pressure Testing 15 times Working Pressure.</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Design Temperature 200 °C to 800°C for AISI 321 & 316-200°C to 420°C for AISI 304 & 304L</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Test Certificates: Available with Materials.</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>Manufacturing Specification BS 6501 Part 1 1991/ISO 10380 2004.</li>
+                                        <li className='li_marker_arrow_r ps-4 mb-2'>End Connections Camlock Coupling welded to Metal hose & Threaded to RSP, BSPT. NPT Standard.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
             </div>
-        </div>
+            <Footer />
+        </>
+        
     )
 }
 

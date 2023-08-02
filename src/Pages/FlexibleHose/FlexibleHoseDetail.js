@@ -66,7 +66,7 @@ const FlexibleHoseDetail = () => {
                 description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                 images: [HoseCouplingFitting1, HoseCouplingFitting2],
                 redirect: true,
-                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/stainless-steel-flexible-exhaust-pipe"
+                redirectLink: "/new-products/flexible-hose/flexible-hose-detail/hose-coupling-fitting"
             },
         ],
         tableData: [
