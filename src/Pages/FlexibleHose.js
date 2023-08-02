@@ -106,7 +106,7 @@ const FlexibleHose = () => {
                     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
                     images: [ StainlessSteelHose_41, StainlessSteelHose_42, StainlessSteelHose_43 ],
 					redirect: true,
-                    redirectLink:  window.location.pathname + "/" + "flexible-hose-detail" ,
+                    redirectLink:  "/new-products/flexible-hose/flexible-hose-detail/hose-nut-fitting" ,
                 }
             ]
         },
