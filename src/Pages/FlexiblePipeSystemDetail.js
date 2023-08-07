@@ -15,6 +15,8 @@ import { productRouteCapitalizeEachLetter } from '../helper'
 import Footer from '../Components/footer'
 import Header from '../Components/header'
 import Modal from 'react-bootstrap/Modal';
+import ProductFilter from '../Components/ProductFilter'
+
 
 const FlexiblePipeSystemDetail = () => {
 
@@ -92,40 +94,48 @@ const FlexiblePipeSystemDetail = () => {
                             :
                             ""
                         }
-                        <div className="product_grid_container selectProductSize product_grid_wrapper">
-                            {
-                                isSizedVariation
-                                ?
-                                data?.filter(el => el?.size === size)?.map(el => (
-                                    <div className="grid-item px-0 product_card_outer">
-                                        <div className="card text-center">
-                                            <div className="sub_card_img">
-                                                <img src={img} className="card-img-top" alt={productRouteCapitalizeEachLetter(product)} />
+                        <div className="row">
+                            <div className="col-3 px-4">
+                                <ProductFilter />
+                            </div>
+                            <div className="col-9">
+                                <div className="product_grid_container selectProductSize product_grid_wrapper">
+                                    {
+                                        isSizedVariation
+                                        ?
+                                        data?.filter(el => el?.size === size)?.map(el => (
+                                            <div className="grid-item px-0 product_card_outer">
+                                                <div className="card text-center">
+                                                    <div className="sub_card_img">
+                                                        <img src={img} className="card-img-top" alt={productRouteCapitalizeEachLetter(product)} />
+                                                    </div>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">{productRouteCapitalizeEachLetter(product)}</h5>
+                                                        <p className="card-text fs_12">{el.description} {productRouteCapitalizeEachLetter(product)}</p>
+                                                        <span className="btn btn-commn-bg-primary w-100" onClick={() => setModal({show: true, data: el})}>Quick View</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="card-body">
-                                                <h5 className="card-title">{productRouteCapitalizeEachLetter(product)}</h5>
-                                                <p className="card-text fs_12">{el.description} {productRouteCapitalizeEachLetter(product)}</p>
-                                                <span className="btn btn-commn-bg-primary w-100" onClick={() => setModal({show: true, data: el})}>Quick View</span>
+                                        ))
+                                        :
+                                        data?.map(el => (
+                                            <div className="grid-item px-0 product_card_outer">
+                                                <div className="card text-center">
+                                                    <div className="sub_card_img">
+                                                        <img src={img} className="card-img-top" alt={productRouteCapitalizeEachLetter(product)} />
+                                                    </div>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">{productRouteCapitalizeEachLetter(product)}</h5>
+                                                        <p className="card-text fs_12">{el.description} {productRouteCapitalizeEachLetter(product)}</p>
+                                                        <span className="btn btn-commn-bg-primary w-100" onClick={() => setModal({show: true, data: el})}>Quick View</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                ))
-                                :
-                                data?.map(el => (
-                                    <div className="grid-item px-0 product_card_outer">
-                                        <div className="card text-center">
-                                            <div className="sub_card_img">
-                                                <img src={img} className="card-img-top" alt={productRouteCapitalizeEachLetter(product)} />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5 className="card-title">{productRouteCapitalizeEachLetter(product)}</h5>
-                                                <p className="card-text fs_12">{el.description} {productRouteCapitalizeEachLetter(product)}</p>
-                                                <span className="btn btn-commn-bg-primary w-100" onClick={() => setModal({show: true, data: el})}>Quick View</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))
-                            }
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>

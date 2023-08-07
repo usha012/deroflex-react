@@ -162,7 +162,49 @@ h6{
   background-color: rgb(212, 212, 212);
   outline: 0px;
 }
+
 // cursor
 .cursor_pointer{
     cursor: pointer;
 }
+
+// checkbox
+input.largerCheckbox{
+    height: 16px;
+    width: 16px;
+}
+
+// multi-range-slider 
+.multi-range-slider  {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+}
+
+.multi-range-slider .bar-inner{
+    background-color: $bg-primary !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+// scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(223, 221, 221); 
+    border-radius: 10px;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px grey;
+    border-radius: 10px;
+  }
+  /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
