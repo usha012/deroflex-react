@@ -123,7 +123,7 @@ const ProductFilter = () => {
             <p className="mb-1 feature_title">Max Operating Temperature</p>
             <MultiRangeSlider
                 min={90}
-                max={150}
+                max={130}
                 step={1}
                 minValue={minValue}
                 maxValue={maxValue}
