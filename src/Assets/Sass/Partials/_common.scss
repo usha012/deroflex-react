@@ -103,6 +103,26 @@
 // product_top_heder
 
 // images_sizes
+// 100%
+.pro_rec_100{
+    width:100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.pro_rec_height{
+    width:100%;
+    height: 300px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
 .pro_50{
     width:100px;
     // height:100px;
@@ -124,10 +144,26 @@
         object-fit: cover;
     }
 }
-
+.pro_150{
+    width:150px;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
 .pro_200{
     width:200px;
-    // height:100px;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.pro_300{
+    width:300px;
     aspect-ratio: 4/3;
     object-fit: contain;
     img{
@@ -137,7 +173,6 @@
 }
 .pro_400{
     width:400px;
-    // height:100px;
     aspect-ratio: 4/3;
     object-fit: contain;
     img{

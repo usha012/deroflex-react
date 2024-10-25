@@ -124,10 +124,22 @@
     background-image: url(../../Images/bg/bg-map-white.png);
     padding:120px 0px;
     position: relative;
-    bottom:-130px;
+    bottom:-69px;
     right:-12px;
     background-color: $bg-primary;
     background-repeat: repeat;
+
+    // best Industry service carousel
+        button{
+            &:focus{
+                box-shadow: none;
+            }
+            // background-color: $text-primary;
+            border: 1px solid white;
+            border-radius: 0.4rem;
+            z-index: 9;
+
+        }
 }
 
 // vertical_line
@@ -169,6 +181,7 @@
     font-family: $secondary-font;
     margin-bottom: 0rem;    
 }
+
 // carousel
 .service_owl_carousel{
     position: relative;
@@ -321,7 +334,41 @@
     font-weight: 500;
     letter-spacing: -2px;
 }
+// who we are
+.owl_carousel_one{
+    .img_outer{
+        aspect-ratio: 2 / 1;
+        width: 500px;
+        margin: auto;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+// products
+.products{
+    ul {
+        li {
+            // border: 1px solid transparent;
+            border-right: 1px solid orange;
+            background-color: $text-gray-600;
+            &:last-child {
+                border-right: none;  
+            }
+            .nav-link {
+                color: $text-gray-800;
+                &.active{
+                    color:$text-white;
+                    background-color: $text-primary; 
+                }
 
+                
+            }
+        }
+    }
+}
 // footer
 .footer-dark.site-footer {
     border-top: 0px solid #212121;
